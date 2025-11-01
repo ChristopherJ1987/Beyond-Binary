@@ -39,11 +39,12 @@ const genreInfo = {
   // Add other genres as needed
 };
 
-export default async function GenrePage({ params }: { params: { slug: string } }) {
-  const genre = genreInfo[params.slug as keyof typeof genreInfo] || genreInfo.tech;
-  const records = params.slug === 'tech' ? techRecords : [];
+export default async function GenrePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const genre = genreInfo[slug as keyof typeof genreInfo] || genreInfo.tech;
+  const records = slug === 'tech' ? techRecords : [];
 
-  if (params.slug === 'tech') {
+  if (slug === 'tech') {
     return (
       <div className="min-h-screen bg-gray-900 relative overflow-hidden">
         {/* Binary Code Background */}
@@ -122,12 +123,12 @@ export default async function GenrePage({ params }: { params: { slug: string } }
       <Navigation />
       <div className="pt-20 relative z-10">
         <div className="max-w-6xl mx-auto px-6 py-12 bg-gray-50 rounded-t-3xl min-h-screen">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8 capitalize">{params.slug} Records</h1>
+          <h1 className="text-4xl font-bold text-gray-800 mb-8 capitalize">{slug} Records</h1>
           
           <div className="text-center py-16">
             <div className="text-6xl mb-4">{genre.emptyImage}</div>
             <h3 className="text-xl font-semibold text-gray-700 mb-2">No records found</h3>
-            <p className="text-gray-500">Check back for future updates in the {params.slug} genre.</p>
+            <p className="text-gray-500">Check back for future updates in the {slug} genre.</p>
           </div>
         </div>
       </div>
