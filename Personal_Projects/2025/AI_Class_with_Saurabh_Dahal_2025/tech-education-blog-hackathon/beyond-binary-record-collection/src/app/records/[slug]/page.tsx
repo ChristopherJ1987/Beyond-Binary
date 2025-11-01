@@ -1,10 +1,17 @@
-'use client';
-
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 
 // Sample record data - will be replaced with real data later
-const sampleRecords: { [key: string]: any } = {
+const sampleRecords: { [key: string]: {
+  title: string;
+  description: string;
+  content: string;
+  genre: string;
+  tags: string[];
+  readTime: number;
+  date: string;
+  author: string;
+} } = {
   "q-cli-exploration": {
     title: "Exploring Amazon Q CLI: An AI-Powered Development Journey",
     description: "A deep dive into Amazon Q CLI capabilities, MCP servers, and how AI is transforming the development workflow.",
@@ -151,7 +158,7 @@ export default async function RecordPage({ params }: { params: Promise<{ slug: s
         <div className="pt-20 relative z-10">
           <div className="max-w-4xl mx-auto px-6 py-12 bg-white rounded-t-3xl min-h-screen">
             <h1 className="text-4xl font-bold text-gray-800 mb-8">Record Not Found</h1>
-            <p className="text-gray-600">The record you're looking for doesn't exist.</p>
+            <p className="text-gray-600">The record you&apos;re looking for doesn&apos;t exist.</p>
             <Link href="/records" className="text-indigo-600 hover:text-indigo-800 mt-4 inline-block">
               ← Back to All Records
             </Link>

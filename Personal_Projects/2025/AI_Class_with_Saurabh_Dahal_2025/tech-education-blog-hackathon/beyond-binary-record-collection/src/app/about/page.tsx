@@ -32,7 +32,7 @@ export default function AboutPage() {
                 At 38, my path to this hackathon has been anything but linear. For over a decade, I worked as a veterinary technician, caring for animals and learning the value of precision, empathy, and continuous learning. 
               </p>
               <p className="text-lg leading-relaxed mt-4">
-                The transition from veterinary medicine to technology began when I enrolled in coding bootcamp - a leap of faith that opened up an entirely new world. Now, as I continue to navigate the technology field, I'm still discovering where my interests and passions will ultimately lead me.
+                The transition from veterinary medicine to technology began when I enrolled in coding bootcamp - a leap of faith that opened up an entirely new world. Now, as I continue to navigate the technology field, I&apos;m still discovering where my interests and passions will ultimately lead me.
               </p>
               <p className="text-lg leading-relaxed mt-4">
                 This journey of constant learning and exploration is what Beyond Binary represents - moving beyond the simple binary choices of yes/no, on/off, to embrace the complex, nuanced, and beautifully messy reality of growth and discovery.
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-cyan-50 p-6 rounded-xl">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">What You'll Find Here</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">What You&apos;ll Find Here</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <h3 className="font-semibold text-gray-700 mb-2">🔬 Tech Explorations</h3>
@@ -62,9 +62,9 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center bg-gray-50 p-8 rounded-xl">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Let's Connect</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Let&apos;s Connect</h2>
               <p className="text-lg leading-relaxed">
-                Whether you're a fellow bootcamp graduate, someone exploring AI and technology, or just curious about this eclectic collection of thoughts and discoveries - welcome! 
+                Whether you&apos;re a fellow bootcamp graduate, someone exploring AI and technology, or just curious about this eclectic collection of thoughts and discoveries - welcome! 
               </p>
               <p className="text-lg leading-relaxed mt-4 font-medium text-indigo-600">
                 Every record here represents a moment of learning, and I hope some of them resonate with your own journey.
