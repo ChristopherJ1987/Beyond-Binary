@@ -235,7 +235,7 @@ export default function RecordPage({ params }: { params: { slug: string } }) {
           {/* Article Content */}
           <article className="prose prose-lg prose-gray max-w-none">
             <div className="text-gray-800 leading-relaxed space-y-6">
-              {record.content.split('\n').map((paragraph, index) => {
+              {record.content.split('\n').map((paragraph: string, index: number) => {
                 if (paragraph.startsWith('# ')) {
                   return <h1 key={index} className="text-3xl font-bold text-gray-900 mt-8 mb-4">{paragraph.slice(2)}</h1>;
                 }
