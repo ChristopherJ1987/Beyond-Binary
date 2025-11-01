@@ -39,7 +39,7 @@ const genreInfo = {
   // Add other genres as needed
 };
 
-export default function GenrePage({ params }: { params: { slug: string } }) {
+export default async function GenrePage({ params }: { params: { slug: string } }) {
   const genre = genreInfo[params.slug as keyof typeof genreInfo] || genreInfo.tech;
   const records = params.slug === 'tech' ? techRecords : [];
 
