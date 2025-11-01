@@ -147,6 +147,13 @@ This certification journey has deepened my understanding of AI fundamentals and 
   }
 };
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'q-cli-exploration' },
+    { slug: 'oracle-ai-study-guide' }
+  ];
+}
+
 export default async function RecordPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const record = sampleRecords[slug];
