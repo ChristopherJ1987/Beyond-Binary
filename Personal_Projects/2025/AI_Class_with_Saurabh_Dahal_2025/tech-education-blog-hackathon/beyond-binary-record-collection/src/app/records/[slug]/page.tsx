@@ -140,8 +140,9 @@ This certification journey has deepened my understanding of AI fundamentals and 
   }
 };
 
-export default function RecordPage({ params }: { params: { slug: string } }) {
-  const record = sampleRecords[params.slug];
+export default async function RecordPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const record = sampleRecords[slug];
 
   if (!record) {
     return (
