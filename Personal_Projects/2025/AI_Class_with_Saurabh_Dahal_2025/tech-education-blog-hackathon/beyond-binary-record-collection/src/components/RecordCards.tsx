@@ -41,26 +41,27 @@ export default function RecordCards() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" style={{fontFamily: 'Audiowide, sans-serif'}}>
           Latest Records
         </h2>
 
         {/* Featured Record */}
         {featuredRecord && (
           <div className="mb-12">
-            <h3 className="text-xl font-semibold mb-6 text-gray-700">Featured Record</h3>
+            <h3 className="text-xl font-semibold mb-6 text-gray-700" style={{fontFamily: 'Syncopate, sans-serif'}}>Featured Record</h3>
             <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white shadow-2xl">
               <div className="flex flex-wrap gap-2 mb-4">
                 {featuredRecord.tags.map((tag) => (
                   <span
                     key={tag}
                     className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium"
+                    style={{fontFamily: 'Nova Mono, monospace'}}
                   >
                     #{tag}
                   </span>
                 ))}
               </div>
-              <h4 className="text-2xl md:text-3xl font-bold mb-4">
+              <h4 className="text-2xl md:text-3xl font-bold mb-4" style={{fontFamily: 'Nova Mono, monospace'}}>
                 {featuredRecord.title}
               </h4>
               <p className="text-lg mb-6 opacity-90 leading-relaxed">
@@ -70,11 +71,12 @@ export default function RecordCards() {
                 <div className="flex items-center gap-4 text-sm">
                   <span>📅 {featuredRecord.date}</span>
                   <span>⏱️ {featuredRecord.readTime} min read</span>
-                  <span>🏷️ {featuredRecord.genre}</span>
+                  <span style={{fontFamily: 'Nova Mono, monospace'}}>🏷️ {featuredRecord.genre}</span>
                 </div>
                 <Link 
                   href={`/records/${featuredRecord.slug}`}
                   className="px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  style={{fontFamily: 'Nova Mono, monospace'}}
                 >
                   Read Record
                 </Link>
@@ -85,7 +87,7 @@ export default function RecordCards() {
 
         {/* Recent Records Grid */}
         <div>
-          <h3 className="text-xl font-semibold mb-6 text-gray-700">Recent Records</h3>
+          <h3 className="text-xl font-semibold mb-6 text-gray-700" style={{fontFamily: 'Syncopate, sans-serif'}}>Recent Records</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {recentRecords.map((record) => (
               <Link
@@ -98,12 +100,13 @@ export default function RecordCards() {
                     <span
                       key={tag}
                       className="px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium"
+                      style={{fontFamily: 'Nova Mono, monospace'}}
                     >
                       #{tag}
                     </span>
                   ))}
                 </div>
-                <h4 className="text-lg font-bold mb-3 text-gray-800 line-clamp-2">
+                <h4 className="text-lg font-bold mb-3 text-gray-800 line-clamp-2" style={{fontFamily: 'Nova Mono, monospace'}}>
                   {record.title}
                 </h4>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3">
@@ -114,7 +117,7 @@ export default function RecordCards() {
                     <span>📅 {record.date}</span>
                     <span>⏱️ {record.readTime} min</span>
                   </div>
-                  <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full font-medium">
+                  <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full font-medium" style={{fontFamily: 'Nova Mono, monospace'}}>
                     {record.genre}
                   </span>
                 </div>

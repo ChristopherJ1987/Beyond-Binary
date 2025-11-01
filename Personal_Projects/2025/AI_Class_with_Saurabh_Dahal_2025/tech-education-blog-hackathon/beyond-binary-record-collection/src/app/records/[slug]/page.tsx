@@ -175,9 +175,6 @@ export default async function RecordPage({ params }: { params: Promise<{ slug: s
     );
   }
 
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
-  const shareText = `Check out this record: ${record.title}`;
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative">
       {/* Animated Background Elements */}
@@ -225,21 +222,6 @@ export default async function RecordPage({ params }: { params: Promise<{ slug: s
               </div>
             </div>
           </header>
-
-          {/* Social Sharing */}
-          <div className="mb-8 p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 mb-3">Share this record:</p>
-            <div className="flex gap-3">
-              <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm"
-              >
-                🐦 Twitter
-              </a>
-            </div>
-          </div>
 
           {/* Article Content */}
           <article className="prose prose-lg prose-gray max-w-none">

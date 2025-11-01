@@ -85,7 +85,7 @@ export default function GenreCards() {
   return (
     <section className="py-16 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" style={{fontFamily: 'Audiowide, sans-serif'}}>
           Explore by Genre
         </h2>
         
@@ -100,13 +100,13 @@ export default function GenreCards() {
                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                   {genre.icon}
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2">
+                <h3 className="font-semibold text-gray-800 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>
                   {genre.name}
                 </h3>
                 <p className="text-sm text-gray-600 mb-3 leading-relaxed">
                   {genre.description}
                 </p>
-                <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full font-medium">
+                <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full font-medium" style={{fontFamily: 'Nova Mono, monospace'}}>
                   {genre.recordCount} records
                 </span>
               </div>
