@@ -39,6 +39,13 @@ const genreInfo = {
   // Add other genres as needed
 };
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'tech' },
+    { slug: 'vegan' }
+  ];
+}
+
 export default async function GenrePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const genre = genreInfo[slug as keyof typeof genreInfo] || genreInfo.tech;
