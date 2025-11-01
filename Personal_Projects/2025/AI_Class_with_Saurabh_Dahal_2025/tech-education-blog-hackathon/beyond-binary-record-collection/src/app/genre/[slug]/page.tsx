@@ -69,7 +69,7 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
         <div className="pt-20 relative z-10">
           <div className="max-w-6xl mx-auto px-6 py-12 bg-gray-50 rounded-t-3xl min-h-screen">
             <div className="border-l-4 border-green-400 pl-6 mb-8">
-              <h1 className="text-4xl font-bold text-gray-800 mb-2">{genre.title}</h1>
+              <h1 className="text-4xl font-bold text-gray-800 mb-2" style={{fontFamily: 'Audiowide, sans-serif'}}>{genre.title}</h1>
               <p className="text-gray-600 text-lg">{genre.description}</p>
             </div>
 
@@ -86,12 +86,13 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
                         <span
                           key={tag}
                           className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-mono"
+                          style={{fontFamily: 'Nova Mono, monospace'}}
                         >
                           #{tag}
                         </span>
                       ))}
                     </div>
-                    <h3 className="text-lg font-bold mb-3 text-gray-800">
+                    <h3 className="text-lg font-bold mb-3 text-gray-800" style={{fontFamily: 'Nova Mono, monospace'}}>
                       {record.title}
                     </h3>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed">
@@ -107,7 +108,7 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
             ) : (
               <div className="text-center py-16">
                 <div className="text-6xl mb-4">{genre.emptyImage}</div>
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">No records found</h3>
+                <h3 className="text-xl font-semibold text-gray-700 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>No records found</h3>
                 <p className="text-gray-500">Check back for future updates in this genre.</p>
               </div>
             )}
@@ -130,11 +131,11 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
       <Navigation />
       <div className="pt-20 relative z-10">
         <div className="max-w-6xl mx-auto px-6 py-12 bg-gray-50 rounded-t-3xl min-h-screen">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8 capitalize">{slug} Records</h1>
+          <h1 className="text-4xl font-bold text-gray-800 mb-8 capitalize" style={{fontFamily: 'Audiowide, sans-serif'}}>{slug} Records</h1>
           
           <div className="text-center py-16">
             <div className="text-6xl mb-4">{genre.emptyImage}</div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">No records found</h3>
+            <h3 className="text-xl font-semibold text-gray-700 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>No records found</h3>
             <p className="text-gray-500">Check back for future updates in the {slug} genre.</p>
           </div>
         </div>
