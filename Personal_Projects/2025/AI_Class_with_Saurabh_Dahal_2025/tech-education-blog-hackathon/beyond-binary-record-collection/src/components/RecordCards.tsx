@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 interface Record {
-  id: string;
+  slug: string;
   title: string;
   description: string;
   genre: string;
@@ -14,7 +14,7 @@ interface Record {
 // Sample data - will be replaced with real data later
 const sampleRecords: Record[] = [
   {
-    id: "1",
+    slug: "q-cli-exploration",
     title: "Exploring Amazon Q CLI: An AI-Powered Development Journey",
     description: "A deep dive into Amazon Q CLI capabilities, MCP servers, and how AI is transforming the development workflow.",
     genre: "tech",
@@ -24,22 +24,13 @@ const sampleRecords: Record[] = [
     featured: true
   },
   {
-    id: "2",
+    slug: "oracle-ai-study-guide",
     title: "Oracle AI Foundations Study Guide",
     description: "Comprehensive notes and insights from preparing for the Oracle AI Foundations certification exam.",
     genre: "tech",
-    tags: ["oracle-certification", "ai-ml", "study-guide"],
+    tags: ["oracle-certification", "ai-ml"],
     readTime: 12,
     date: "2025-10-13"
-  },
-  {
-    id: "3",
-    title: "Building an Iron Man Suit: The AI Vision",
-    description: "Exploring how current AI, ML, and robotics technologies could theoretically create Tony Stark's dream.",
-    genre: "tech",
-    tags: ["ai-ml", "robotics", "futurism"],
-    readTime: 6,
-    date: "2025-10-12"
   }
 ];
 
@@ -82,7 +73,7 @@ export default function RecordCards() {
                   <span>🏷️ {featuredRecord.genre}</span>
                 </div>
                 <Link 
-                  href={`/records/${featuredRecord.id}`}
+                  href={`/records/${featuredRecord.slug}`}
                   className="px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
                   Read Record
@@ -98,8 +89,8 @@ export default function RecordCards() {
           <div className="grid md:grid-cols-3 gap-6">
             {recentRecords.map((record) => (
               <Link
-                key={record.id}
-                href={`/records/${record.id}`}
+                key={record.slug}
+                href={`/records/${record.slug}`}
                 className="bg-white border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex flex-wrap gap-2 mb-4">
