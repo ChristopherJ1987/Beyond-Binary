@@ -67,15 +67,15 @@ export default function RecordCards() {
               <p className="text-lg mb-6 opacity-90 leading-relaxed">
                 {featuredRecord.description}
               </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-sm">
                   <span>📅 {featuredRecord.date}</span>
                   <span>⏱️ {featuredRecord.readTime} min read</span>
                   <span style={{fontFamily: 'Nova Mono, monospace'}}>🏷️ {featuredRecord.genre}</span>
                 </div>
                 <Link 
                   href={`/records/${featuredRecord.slug}`}
-                  className="px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  className="px-6 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center sm:text-left"
                   style={{fontFamily: 'Nova Mono, monospace'}}
                 >
                   Read Record
