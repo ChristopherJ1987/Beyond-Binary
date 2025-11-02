@@ -80,35 +80,37 @@ export default function RecordsPage() {
         <h1 className="text-4xl font-bold text-gray-800 mb-8">All Records</h1>
         
         {/* Search and Filters */}
-        <div className="mb-8 space-y-4 md:space-y-0 md:flex md:gap-4 md:items-center">
+        <div className="mb-8 space-y-4">
           <input
             type="text"
             placeholder="🔍 Search records by title, description, or tags..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 placeholder-gray-500 bg-white shadow-sm"
+            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 placeholder-gray-500 bg-white shadow-sm"
           />
           
-          <select
-            value={selectedGenre}
-            onChange={(e) => setSelectedGenre(e.target.value)}
-            className="px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 bg-white shadow-sm font-medium"
-          >
-            {genres.map(genre => (
-              <option key={genre} value={genre} className="text-gray-800">
-                {genre === "all" ? "All Genres" : genre.charAt(0).toUpperCase() + genre.slice(1)}
-              </option>
-            ))}
-          </select>
-          
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 bg-white shadow-sm font-medium"
-          >
-            <option value="recent" className="text-gray-800">Most Recent</option>
-            <option value="alphabetical" className="text-gray-800">Alphabetical</option>
-          </select>
+          <div className="flex gap-4">
+            <select
+              value={selectedGenre}
+              onChange={(e) => setSelectedGenre(e.target.value)}
+              className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 bg-white shadow-sm font-medium"
+            >
+              {genres.map(genre => (
+                <option key={genre} value={genre} className="text-gray-800">
+                  {genre === "all" ? "All Genres" : genre.charAt(0).toUpperCase() + genre.slice(1)}
+                </option>
+              ))}
+            </select>
+            
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 bg-white shadow-sm font-medium"
+            >
+              <option value="recent" className="text-gray-800">Most Recent</option>
+              <option value="alphabetical" className="text-gray-800">Alphabetical</option>
+            </select>
+          </div>
         </div>
 
         {/* Results Count */}
