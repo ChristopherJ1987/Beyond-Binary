@@ -89,24 +89,24 @@ export default function GenreCards() {
           Explore by Genre
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {genres.map((genre) => (
             <Link
               key={genre.slug}
               href={`/genre/${genre.slug}`}
-              className="group cursor-pointer bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
+              className="group cursor-pointer bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
             >
-              <div className="text-center">
-                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-center flex flex-col h-full">
+                <div className="text-3xl md:text-4xl mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
                   {genre.icon}
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>
+                <h3 className="font-semibold text-gray-800 mb-2 text-sm md:text-base" style={{fontFamily: 'Syncopate, sans-serif'}}>
                   {genre.name}
                 </h3>
-                <p className="text-sm text-gray-600 mb-3 leading-relaxed">
+                <p className="text-xs md:text-sm text-gray-600 mb-3 leading-relaxed flex-grow">
                   {genre.description}
                 </p>
-                <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full font-medium" style={{fontFamily: 'Nova Mono, monospace'}}>
+                <span className="inline-block px-2 md:px-3 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full font-medium mt-auto" style={{fontFamily: 'Nova Mono, monospace'}}>
                   {genre.recordCount} records
                 </span>
               </div>
