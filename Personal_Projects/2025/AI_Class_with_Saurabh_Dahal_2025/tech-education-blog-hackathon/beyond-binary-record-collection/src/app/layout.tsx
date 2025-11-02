@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Christopher" }],
   creator: "Christopher",
   publisher: "Beyond Binary",
+  icons: {
+    icon: "/fox_favicon.png",
+  },
   openGraph: {
     title: "Beyond Binary - Record Collection",
     description: "A curated collection of discoveries, insights, and hidden gems across technology, AI, and life.",
