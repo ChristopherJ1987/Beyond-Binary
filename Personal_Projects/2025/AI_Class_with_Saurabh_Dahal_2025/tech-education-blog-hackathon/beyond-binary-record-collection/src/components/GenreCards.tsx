@@ -83,9 +83,9 @@ const genres: Genre[] = [
 
 export default function GenreCards() {
   return (
-    <section className="py-16 px-6 bg-gray-50">
+    <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" style={{fontFamily: 'Audiowide, sans-serif'}}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white" style={{fontFamily: 'Audiowide, sans-serif'}}>
           Explore by Genre
         </h2>
         
