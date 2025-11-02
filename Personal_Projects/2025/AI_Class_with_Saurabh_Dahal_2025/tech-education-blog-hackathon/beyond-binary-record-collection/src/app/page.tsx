@@ -4,10 +4,12 @@ import RecordCards from '@/components/RecordCards';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
       <Hero />
-      <GenreCards />
-      <RecordCards />
+      <div className="relative bg-black/20 backdrop-blur-[1px]">
+        <GenreCards />
+        <RecordCards />
+      </div>
     </main>
   );
 }
