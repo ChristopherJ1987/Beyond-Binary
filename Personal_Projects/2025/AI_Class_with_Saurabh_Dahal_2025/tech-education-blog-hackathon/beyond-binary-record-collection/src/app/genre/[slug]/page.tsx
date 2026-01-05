@@ -118,7 +118,94 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
     );
   }
 
-  // Default genre page for non-tech genres
+  if (slug === 'vegan') {
+    return (
+      <div className="min-h-screen bg-emerald-200 relative overflow-hidden">
+        {/* Vegan badge images positioned on sides */}
+        <img 
+          src="/vegan.png" 
+          alt="Vegan badge" 
+          className="absolute top-1/3 left-8 w-24 h-24"
+        />
+        <img 
+          src="/vegan.png" 
+          alt="Vegan badge" 
+          className="absolute bottom-1/3 right-8 w-24 h-24"
+        />
+        
+        <Navigation />
+        <div className="pt-20 relative z-10">
+          <div className="max-w-6xl mx-auto px-6 py-12 bg-white/90 backdrop-blur-sm rounded-t-3xl min-h-screen shadow-xl">
+            <div className="border-l-4 border-red-500 pl-6 mb-8">
+              <h1 className="text-4xl font-bold text-gray-800 mb-2" style={{fontFamily: 'Audiowide, sans-serif'}}>
+                {genre.title}
+              </h1>
+              <p className="text-gray-600 text-lg font-medium">{genre.description}</p>
+            </div>
+            
+            <div className="text-center py-16">
+              <div className="text-6xl mb-4">🌱❤️</div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>
+                No records found
+              </h3>
+              <p className="text-gray-500">Check back for future updates in the {slug} genre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (slug === 'vegan') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-amber-900 via-green-900 to-stone-800 relative overflow-hidden">
+        {/* Organic Tattoo-Style Background */}
+        <div className="absolute inset-0 opacity-25">
+          {/* Vine patterns */}
+          <div className="absolute top-10 left-10 w-64 h-64 border-2 border-green-400 rounded-full opacity-30 animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 border border-amber-400 rounded-full opacity-40"></div>
+          
+          {/* Leaf silhouettes */}
+          <div className="absolute top-1/4 right-1/4 text-green-300 text-6xl opacity-40 animate-pulse">🌿</div>
+          <div className="absolute bottom-1/3 left-1/5 text-amber-300 text-4xl opacity-50">🍃</div>
+          <div className="absolute top-1/2 left-1/2 text-green-400 text-3xl opacity-30">🌱</div>
+          
+          {/* Flowing organic shapes */}
+          <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 1000 1000">
+            <path d="M100,200 Q300,100 500,200 T900,200" stroke="#22c55e" strokeWidth="2" fill="none" className="animate-pulse"/>
+            <path d="M50,400 Q250,300 450,400 T850,400" stroke="#f59e0b" strokeWidth="1.5" fill="none"/>
+            <path d="M150,600 Q350,500 550,600 T950,600" stroke="#16a34a" strokeWidth="1" fill="none" className="animate-pulse"/>
+          </svg>
+          
+          {/* Animal silhouettes */}
+          <div className="absolute top-1/6 left-1/3 text-stone-300 text-2xl opacity-40">🦋</div>
+          <div className="absolute bottom-1/4 right-1/3 text-green-300 text-2xl opacity-30">🐝</div>
+        </div>
+        
+        <Navigation />
+        <div className="pt-20 relative z-10">
+          <div className="max-w-6xl mx-auto px-6 py-12 bg-stone-50 rounded-t-3xl min-h-screen">
+            <div className="border-l-4 border-green-600 pl-6 mb-8">
+              <h1 className="text-4xl font-bold text-stone-800 mb-2" style={{fontFamily: 'Audiowide, sans-serif'}}>
+                {genre.title}
+              </h1>
+              <p className="text-stone-600 text-lg italic">{genre.description}</p>
+            </div>
+            
+            <div className="text-center py-16">
+              <div className="text-6xl mb-4">{genre.emptyImage}</div>
+              <h3 className="text-xl font-semibold text-stone-700 mb-2" style={{fontFamily: 'Syncopate, sans-serif'}}>
+                No records found
+              </h3>
+              <p className="text-stone-500">Check back for future updates in the {slug} genre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Default genre page for other genres
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative">
       {/* Animated Background Elements */}
