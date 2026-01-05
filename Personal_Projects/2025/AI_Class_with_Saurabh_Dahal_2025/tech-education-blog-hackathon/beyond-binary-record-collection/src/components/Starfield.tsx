@@ -8,6 +8,7 @@ const Starfield = () => {
     stars1: '',
     stars2: ''
   });
+  const [shootingStars, setShootingStars] = useState<Array<{left: string, top: string}>>([]);
 
   useEffect(() => {
     const createStars = (n: number) => {
@@ -25,6 +26,14 @@ const Starfield = () => {
       stars1: createStars(700),
       stars2: createStars(200)
     });
+
+    // Generate shooting star positions once on client
+    setShootingStars(
+      Array.from({ length: 10 }, () => ({
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`
+      }))
+    );
   }, []);
 
   return (
@@ -42,14 +51,14 @@ const Starfield = () => {
         style={{ boxShadow: starStyles.stars2 }}
       />
       {/* Generate 10 shooting stars */}
-      {Array.from({ length: 10 }, (_, i) => (
+      {shootingStars.map((star, i) => (
         <div 
           key={i} 
           className="shooting-stars"
           style={{
             animationDelay: `${i * 1}s`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`
+            left: star.left,
+            top: star.top
           }}
         />
       ))}
