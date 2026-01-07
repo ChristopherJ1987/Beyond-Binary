@@ -120,7 +120,7 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
 
   if (slug === 'vegan') {
     return (
-      <div className="min-h-screen bg-emerald-200 relative overflow-hidden">
+      <div className="min-h-screen bg-green-800 relative overflow-hidden">
         {/* Vegan badge images positioned on sides */}
         <img 
           src="/vegan.png" 
