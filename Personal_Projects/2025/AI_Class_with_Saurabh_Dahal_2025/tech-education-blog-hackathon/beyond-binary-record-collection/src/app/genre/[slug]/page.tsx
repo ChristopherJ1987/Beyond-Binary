@@ -137,6 +137,17 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
           alt="Tofu" 
           className="absolute top-3/4 left-8 w-36 h-36"
         />
+        {/* New vegan images */}
+        <img 
+          src="/vegan_cow.png" 
+          alt="Vegan cow" 
+          className="absolute top-1/6 right-8 w-61 h-61"
+        />
+        <img 
+          src="/vegan_snorlax.png" 
+          alt="Vegan snorlax" 
+          className="absolute top-2/3 right-8 w-56 h-56"
+        />
         
         <Navigation />
         <div className="pt-20 relative z-10">
