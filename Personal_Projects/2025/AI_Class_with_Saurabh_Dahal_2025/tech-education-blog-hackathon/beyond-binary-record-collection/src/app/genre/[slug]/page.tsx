@@ -125,7 +125,7 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
         <img 
           src="/vegan.png" 
           alt="Vegan heart badge" 
-          className="absolute top-1/4 left-8 w-32 h-32"
+          className="absolute top-8 right-8 w-32 h-32"
         />
         <img 
           src="/unicorn_vegan_sticker.png" 
@@ -141,7 +141,7 @@ export default async function GenrePage({ params }: { params: Promise<{ slug: st
         <img 
           src="/vegan_cow.png" 
           alt="Vegan cow" 
-          className="absolute top-1/6 right-8 w-61 h-61"
+          className="absolute top-32 left-4 w-61 h-61"
         />
         <img 
           src="/vegan_snorlax.png" 
