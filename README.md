@@ -1,3 +1,5 @@
+![Beyond Binary Banner Image](./assets/beyond-binary-banner.png)
+
 # Beyond Binary
 
 > Moving beyond simple binary choices to embrace the complex, nuanced, and beautifully messy reality of growth and discovery.
