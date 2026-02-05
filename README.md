@@ -1,30 +1,26 @@
 ![Beyond Binary Banner Image](./assets/beyond-binary-banner.png)
 
-# Beyond Binary
-
-> Moving beyond simple binary choices to embrace the complex, nuanced, and beautifully messy reality of growth and discovery.
-
 ## 🎯 Vision
 
-Beyond Binary represents a philosophy of thinking beyond the limitations of yes/no, on/off, black/white. It's about exploring the infinite possibilities that exist in the spaces between extremes—where innovation, creativity, and meaningful solutions are born.
+Beyond Binary is built on the belief that the most meaningful solutions exist in the spaces between extremes; beyond yes and no, beyond good and bad, beyond binary choices. This philosophy guides how I wish to live and work.
 
-This repository serves as the central hub for all Beyond Binary projects, from personal explorations to future business ventures that embody this vision of transcending traditional boundaries.
+This business serves as my path to financial independence through website design and development, while staying rooted in what matters: creating work that supports causes such as animal welfare, human rights, environmental sustainability, and community wellbeing.
+
+As Beyond Binary grows, success means more than financial stability. It means capacity for pro-bono work that makes a difference, opportunities to share knowledge through community education, and the freedom to keep learning how to be a better steward of our world. This repository exists as a reminder of that commitment - a compass to return to when the work gets hard or when success tempts me to forget why I started.
+
+## 📖 About This Repository
+
+This repository serves as the central hub for all Beyond Binary work, using git submodules to organize the individual projects while keeping them in their own repositories. This stucture allows each project to maintain its own history and documentation while staying connected to the broader Beyond Binary vision.
 
 ## 📁 Repository Structure
 
-### Personal Projects
-**`Personal_Projects/`** - Individual learning journeys and experimental projects
+**`/personal_projects`** - Individual learning journeys and experimental projects. Each new coding concept or technology gets explored here through hands-on building. These projects serve both as skill development and as a growing library of reference implementations.
 
-- **`tech-education-blog-hackathon/`** - A Next.js blog application showcasing AI-powered development
-  - Built collaboratively with Amazon Q CLI
-  - Features genre-based content organization
-  - Demonstrates modern web development practices
-  - *Live Demo: [Coming Soon]*
+**`/client_projects`** - Paid website design and development work for clients. Each project maintained as its own submodule with full documentation.
 
-### Future Expansions
-- **Business Projects** - Client work and commercial ventures under the Beyond Binary brand
-- **Collaborative Projects** - Open-source contributions and community initiatives
-- **Research & Development** - Experimental technologies and proof-of-concepts
+**`/community_work`** - Pro-bono projects for mission-aligned organizations. Each project maintained as its own submodule with full documentation.
+
+**`/resources`** - Reusable tools, learning references, and building blocks: coding language setups, algorithm implementations across different languages, templates, design systems, and other resources that support both learning and efficiency across all projects.
 
 ## 🚀 Current Highlights
 
