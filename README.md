@@ -22,6 +22,8 @@ This repository serves as the central hub for all Beyond Binary work, using git 
 
 **`/resources`** - Reusable tools, learning references, and building blocks: coding language setups, algorithm implementations across different languages, templates, design systems, and other resources that support both learning and efficiency across all projects.
 
+**`/professional_credentials`** - Professional documents including resumes, cover letters, and certificates. Kept in this repository for easy access and version control whenever needed.
+
 ---
 
 *Here's to the messy beautiful work of learning and building. May your curiosity lead you somewhere unexpected.*
