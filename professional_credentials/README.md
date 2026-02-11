@@ -11,3 +11,7 @@ This directory houses professional and career-related documents including resume
 **`/cover-letters`** - Cover letter templates and customized versions for specific applications or opportunities.
 
 **`/professional-certificates`** - Certifications, course completions, and professional credentials earned throughout my development journey and career.
+
+---
+
+*A jack of all trades is a master of none, but oftentimes better than a master of one.*
