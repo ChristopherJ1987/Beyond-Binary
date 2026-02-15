@@ -12,7 +12,7 @@ This is where curiosity lives, where frustration turns into breakthroughs, and w
 
 **`/oracle`** -Oracle certification study tools, exam preparation projects, and learning materials organized by certification path.
 
-**`/ recipes`** - Recipe collection and culinary experiments, serving as content for future blog projects and personal reference.
+**`/recipes`** - Recipe collection and culinary experiments, serving as content for future blog projects and personal reference.
 
 ---
 
