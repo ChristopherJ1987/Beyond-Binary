@@ -6,11 +6,12 @@ This directory serves as a personal library of reusable code, reference implemen
 These resources support both learning and production work, providing quick-start templates, battle-tested algorithms, and proven component patterns that can be referenced or copied into new projects as needed.
 
 ## 📁 Directory Structure
-### `/algorithms` - Algorithm implementations across differennt programming languages. Organized by language using subdirectories
 
-### `/project-starters` - Starter templates and boilerplate setups for different frameworks, languages, and technology stacks. Organized by language or framework using subdirectories
+**`/algorithms`** - Algorithm implementations across differennt programming languages. Organized by language using subdirectories
 
-### `components` - Reusable UI components and design system elements. Organized by language or framework using subdirectories
+**`/project-starters`** - Starter templates and boilerplate setups for different frameworks, languages, and technology stacks. Organized by language or framework using subdirectories
+
+**`components`** - Reusable UI components and design system elements. Organized by language or framework using subdirectories
 
 ## How to Use These Resources
 
