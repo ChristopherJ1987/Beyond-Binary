@@ -11,7 +11,7 @@ These resources support both learning and production work, providing quick-start
 
 **`/project-starters`** - Starter templates and boilerplate setups for different frameworks, languages, and technology stacks. Organized by language or framework using subdirectories
 
-**`components`** - Reusable UI components and design system elements. Organized by language or framework using subdirectories
+**`/components`** - Reusable UI components and design system elements. Organized by language or framework using subdirectories
 
 ## How to Use These Resources
 
