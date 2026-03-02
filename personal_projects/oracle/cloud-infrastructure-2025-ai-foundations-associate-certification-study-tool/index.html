@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle AI Foundations Associate Exam Certification Study Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/oracle_favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Oracle AI Foundations Associate Exam Certification Study Tool</h1>
+            <div class="stats">
+                <span id="progress">0/0</span>
+                <span id="session-stats">Session: 0 correct, 0 wrong</span>
+            </div>
+        </header>
+
+        <div class="study-mode-selector">
+            <h3>Study Mode:</h3>
+            <div class="mode-options">
+                <label class="mode-option">
+                    <input type="radio" name="study-mode" value="questions" checked>
+                    <span class="mode-label">📝 Practice Questions</span>
+                    <span class="mode-desc">Skills Check + Practice Exam + Review</span>
+                </label>
+                <label class="mode-option">
+                    <input type="radio" name="study-mode" value="flashcards">
+                    <span class="mode-label">🃏 Flashcards</span>
+                    <span class="mode-desc">Key Terms & Definitions</span>
+                </label>
+                <label class="mode-option">
+                    <input type="radio" name="study-mode" value="study-materials">
+                    <span class="mode-label">📚 Study Materials</span>
+                    <span class="mode-desc">Module Content Browser</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Questions Mode -->
+        <div id="questions-mode" class="study-content">
+            <div class="filter-options">
+                <select id="question-filter">
+                    <option value="all">All Questions</option>
+                    <option value="module">By Module</option>
+                </select>
+                <select id="module-select" class="hidden">
+                    <option value="">Select Module...</option>
+                </select>
+            </div>
+            
+            <div class="question-card">
+                <div id="question-text"></div>
+                <div id="choices"></div>
+                <div id="feedback" class="feedback hidden"></div>
+                <div class="question-actions">
+                    <button id="next-btn" class="hidden">Next Question</button>
+                    <button id="show-explanation" class="hidden">Show Explanation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcards Mode -->
+        <div id="flashcards-mode" class="study-content hidden">
+            <div class="flashcard-controls">
+                <button id="quiz-mode-btn">Quiz Mode</button>
+                <button id="browse-mode-btn" class="active">Browse Mode</button>
+                <input type="text" id="term-search" placeholder="Search terms...">
+            </div>
+            
+            <div id="flashcard-container">
+                <div class="flashcard" id="current-flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div id="term-text"></div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div id="definition-text"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flashcard-controls-bottom">
+                    <button id="flip-card">Show Definition</button>
+                    <div class="quiz-actions">
+                        <button id="know-it">I Know It</button>
+                        <button id="study-more">Study More</button>
+                    </div>
+                    <button id="next-card">Next Card</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Materials Mode -->
+        <div id="study-materials-mode" class="study-content hidden">
+            <div class="materials-controls">
+                <input type="text" id="content-search" placeholder="Search modules and topics...">
+                <select id="module-filter">
+                    <option value="">All Modules</option>
+                </select>
+            </div>
+            
+            <div id="materials-container">
+                <div id="module-list"></div>
+                <div id="module-content"></div>
+            </div>
+        </div>
+
+        <div id="struggle-tracker" class="struggle-tracker hidden">
+            <h3>Topics You've Struggled With:</h3>
+            <ul id="struggle-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/flashcards.js"></script>
+    <script src="js/study-materials.js"></script>
+    <script src="js/unified-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+.topic-selector {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.mode-btn {
+    padding: 8px 16px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mode-btn.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.filter-options {
+    margin-top: 15px;
+}
+
+.filter-options select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.question-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.choice {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.choice:hover {
+    border-color: #3498db;
+    background: #f8f9fa;
+}
+
+.choice.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.choice.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.choice.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.feedback.correct {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.question-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.question-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+#next-btn {
+    background: #28a745;
+    color: white;
+}
+
+#next-btn:hover {
+    background: #218838;
+}
+
+#show-explanation {
+    background: #6c757d;
+    color: white;
+}
+
+#show-explanation:hover {
+    background: #5a6268;
+}
+
+.struggle-tracker {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.struggle-tracker h3 {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+#struggle-list {
+    list-style: none;
+}
+
+#struggle-list li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background: #f8d7da;
+    border-radius: 4px;
+    color: #721c24;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .mode-buttons {
+        flex-direction: column;
+    }
+    
+    .question-actions {
+        flex-direction: column;
+    }
+}
+/* Study Mode Selector */
+.study-mode-selector {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mode-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mode-option {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+}
+
+.mode-option:hover {
+    border-color: #3498db;
+    background-color: #f8f9fa;
+}
+
+.mode-option input[type="radio"] {
+    display: none;
+}
+
+.mode-option input[type="radio"]:checked + .mode-label {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.mode-option input[type="radio"]:checked ~ .mode-desc {
+    color: #3498db;
+}
+
+.mode-option:has(input[type="radio"]:checked) {
+    border-color: #3498db;
+    background-color: #e7f3ff;
+}
+
+.mode-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.mode-desc {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Study Content Areas */
+.study-content {
+    margin-top: 1rem;
+}
+
+.study-content.hidden {
+    display: none;
+}
+
+/* Flashcard Styles */
+.flashcard-controls {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flashcard-controls button {
+    padding: 8px 16px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.flashcard-controls button.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+#term-search {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.flashcard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    perspective: 1000px;
+    position: relative;
+    overflow: visible;
+}
+
+.flashcard::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    z-index: -1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.flashcard::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: -16px;
+    bottom: -16px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    z-index: -2;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: white;
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+}
+
+.flashcard-inner.card-changing {
+    animation: cardSlide 0.4s ease-in-out;
+}
+
+@keyframes cardSlide {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+#term-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#definition-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.flashcard-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.flashcard-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+#know-it {
+    background: #28a745;
+    color: white;
+}
+
+#study-more {
+    background: #ffc107;
+    color: #333;
+}
+
+#next-card, #flip-card {
+    background: #3498db;
+    color: white;
+}
+
+/* Study Materials Styles */
+.materials-controls {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#content-search, #module-filter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#content-search {
+    flex: 1;
+    min-width: 250px;
+}
+
+#materials-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    min-height: 500px;
+}
+
+#module-list {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.module-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.module-item:hover {
+    border-color: #3498db;
+    background: #e7f3ff;
+}
+
+.module-item.active {
+    background: #3498db;
+    color: white;
+}
+
+#module-content {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .mode-options {
+        flex-direction: column;
+    }
+    
+    .mode-option {
+        min-width: auto;
+    }
+    
+    #materials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .flashcard-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flashcard-controls, .materials-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+/* External Flashcard Controls */
+.flashcard-controls-bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.quiz-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flashcard-controls-bottom button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+#flip-card {
+    background: #3498db;
+    color: white;
+}
+
+#flip-card:hover {
+    background: #2980b9;
+}
+
+#know-it {
+    background: #28a745;
+    color: white;
+}
+
+#know-it:hover {
+    background: #218838;
+}
+
+#study-more {
+    background: #ffc107;
+    color: #333;
+}
+
+#study-more:hover {
+    background: #e0a800;
+}
+
+#next-card {
+    background: #6c757d;
+    color: white;
+}
+
+#next-card:hover {
+    background: #5a6268;
+}
+
+/* Updated card transition */
+.flashcard-inner.card-changing {
+    animation: cardStack 0.8s ease-in-out;
+}
+
+@keyframes cardStack {
+    0% { 
+        transform: translateY(0) translateX(0) scale(1);
+        filter: blur(0px);
+        z-index: 10;
+    }
+    25% { 
+        transform: translateY(-30px) translateX(0) scale(1.05);
+        filter: blur(2px);
+        z-index: 10;
+    }
+    50% { 
+        transform: translateY(-40px) translateX(100px) scale(1.05);
+        filter: blur(4px);
+        z-index: 10;
+    }
+    75% { 
+        transform: translateY(20px) translateX(100px) scale(0.95);
+        filter: blur(2px);
+        z-index: 1;
+    }
+    100% { 
+        transform: translateY(0) translateX(0) scale(1);
+        filter: blur(0px);
+        z-index: 1;
+    }
+}
+
+/* Responsive flashcard controls */
+@media (max-width: 768px) {
+    .flashcard-controls-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .quiz-actions {
+        order: 2;
+    }
+    
+    #flip-card {
+        order: 1;
+    }
+    
+    #next-card {
+        order: 3;
+    }
+}
+
+/* Study Materials Mode */
+.materials-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.materials-controls input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.materials-controls select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+#materials-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    min-height: 400px;
+}
+
+#module-list {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.module-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    border-left: 3px solid transparent;
+}
+
+.module-item:hover {
+    background: #e9ecef;
+    border-left-color: #007bff;
+}
+
+.module-item.active {
+    background: #007bff;
+    color: white;
+    border-left-color: #0056b3;
+}
+
+#module-content {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#module-content h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+#module-content h3 {
+    color: #34495e;
+    margin: 20px 0 10px 0;
+}
+
+#module-content h4 {
+    color: #5a6c7d;
+    margin: 15px 0 8px 0;
+}
+
+#module-content ul, #module-content ol {
+    margin: 10px 0 15px 20px;
+}
+
+#module-content li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+#module-content strong {
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    #materials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .materials-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .materials-controls select {
+        min-width: auto;
+    }
+}
