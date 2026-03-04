@@ -1,0 +1,3 @@
+[submodule "personal_projects/business/music-player"]
+	path = personal_projects/business/music-player
+	url = git@github.com:ChristopherJ1987/music-player.git
