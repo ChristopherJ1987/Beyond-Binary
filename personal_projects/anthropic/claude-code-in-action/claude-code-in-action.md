@@ -34,9 +34,7 @@ So how do coding assistants solve this problem? They use a clever system called 
 #### How Tool Use Works
 When you send a request to a coding assistant, it automatically adds instructions to your message that teach the language model how to request actions. For example, it might add text like: "If you want to read a file, respond with 'ReadFile: name of file'"
 
-<br />
-
-*`Here's the complete flow:`*
+#### *`Here's the complete flow:`*
 
 #### *`You ask:`* "What code is written in the main.go file?"
 
