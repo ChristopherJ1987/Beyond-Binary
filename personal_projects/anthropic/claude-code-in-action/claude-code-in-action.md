@@ -1,12 +1,14 @@
 # Claude Code in Action
+
 `Created: March 27.2026`
-`Last Updated: April 2, 2026`
+
+`Last Updated: April 3, 2026`
 
 ## Study Guide Overview
 
 1. [What is Claude Code](#what-is-claude-code)
 2. [Getting Hands On](#getting-hands-on)
-3. [Hooks and the SDK](#hooks-SDK)
+3. [Hooks and the SDK](#hooks-and-the-SDK)
 4. [Wrapping Up: Quiz](#quiz)
 
 ---
@@ -470,4 +472,3 @@ When setting up Claude's GitHub integration:
 * Consider your project's specific needs when configuring additional steps
 
 The GitHub integration transforms Claude from a development assistant into an automated team member that can handle tasks, review code, and provide insights directly within your GitHub workflow.
-
