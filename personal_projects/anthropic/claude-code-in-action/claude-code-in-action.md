@@ -8,8 +8,8 @@
 
 1. [What is Claude Code](#what-is-claude-code)
 2. [Getting Hands On](#getting-hands-on)
-3. [Hooks and the SDK](#hooks-and-the-SDK)
-4. [Wrapping Up: Quiz](#quiz)
+3. [Hooks and the SDK](#hooks-and-the-sdk)
+4. [Wrapping Up: Quiz](#wrapping-up-quiz)
 
 ---
 
