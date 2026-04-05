@@ -288,3 +288,287 @@ The Code tab is rolling out to Pro, Max, Team, and Enterprise users.
 | Tools and extensions | Connectors, Skills, Claude in Chrome | Connectors (local and remote), Skills, Claude in Chrome, Plugins | Connectors, Skills, Claude in Chrome, Plugins, Hooks
 
 ### [Organizing your work and knowledge](#organizing-your-work-and-knowledge)
+
+#### Introduction to projects
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what projects are and when to use them
+- Create a new project with a name, description, and visibility settings
+- Add documents and files to your project's knowledge base
+- Write effective project instructions to guide Claude's behavior
+- Share projects with teammates (for Claude for Work users)
+
+##### What are Projects?
+Projects are ideal for storing knowledge Claude should reference, organizing related chats around a specific topic or work area, and collaborating with team members who need access to the same shared context.
+
+###### When to use Projects
+Projects are particularly valuable when you're working on something ongoing—not just a one-off question. Consider creating a project when you have a workflow with:
+
+- Reference materials you'll use repeatedly (meeting notes, survey results, reports, historical data, etc.)
+- Consistent requirements for how Claude should respond (always use formal language, always cite sources, always follow our template)
+- Team collaboration needs where multiple people should work from the same foundation
+
+###### Creating your first project
+Setting up a project takes just a few minutes. Here's how to get started:
+
+> Step 1: Set up your project
+1. Hover over the left sidebar and click "Projects," or navigate directly to claude.ai/projects
+2. Click "+ New Project" in the upper right corner
+3. Give your project a descriptive name (e.g., "Q4 Marketing Campaign" or "Product Documentation")
+4. Add a brief description of what you're working on. While Claude doesn't see this description directly, it helps you and your teammates understand the project's purpose.
+5. Choose your visibility settings: keep it private or share with your organization (for Claude for Work users)
+
+> Step 2: Add project instructions
+
+Project instructions tell Claude how to behave across all conversations in this project. Click on "Instructions" to open the instructions panel.
+
+Good project instructions typically include:
+
+- **Context about what you're working on:** "This project is for creating marketing content for our B2B software product."
+- **Process instructions:** "First consider a blog structure that will entice this audience, then write the draft."
+- **Tone and style preferences:** "Use a professional but conversational tone. Avoid jargon when possible."
+- **Specific requirements:** "Always include a call-to-action at the end of marketing copy."
+
+Once you've written your instructions, click "Save instructions." These will apply to every chat in this project and work alongside any user preferences and styles you've set.
+
+> Step 3: Build your knowledge base
+
+Your project's knowledge base is where you upload documents that Claude should reference. You'll find the files menu on the right side of your project's main page.
+
+Click the "+" button to add content. You can upload various file types including PDF, DOCX, CSV, TXT, HTML, and more. You can also connect to Google Drive to link documents directly.
+
+What to upload:
+
+- Reference documents (brand guidelines, style guides, templates)
+- Background materials (research reports, meeting notes, requirements docs)
+- Examples of work you want Claude to emulate
+- Technical documentation or specifications
+
+**Pro tip:** Name your files descriptively. Claude uses file names to understand and retrieve the right information, so "Q4-2024-Brand-Guidelines.pdf" is more helpful than "document1.pdf."
+
+###### How projects handle large knowledge bases
+You might wonder what happens when you upload a lot of content. Projects automatically scale to handle large amounts through a feature called Retrieval Augmented Generation (RAG).
+
+When your project knowledge approaches the context window limit, Claude seamlessly enables RAG mode. Instead of loading all project content into memory at once, Claude intelligently searches and retrieves only the most relevant information needed to answer your questions. This expands your project's capacity by up to 10x while maintaining response quality.
+
+You'll see a visual indicator when your project is RAG-enabled, but the experience should feel the same—you can still upload documents, chat with Claude, and get context-aware responses.
+
+##### Working within your project
+Once your project is set up, you can start chatting with Claude. Each conversation within the project automatically has access to your knowledge base and follows your project instructions.
+
+##### Collaboration features
+For users on Claude for Work (Team and Enterprise) plans, projects become even more powerful through collaboration features.
+
+###### Permission levels
+When sharing a project, you can choose from three permission levels:
+
+1. Can view: Members can see project contents, access knowledge, and chat—but can't make changes. Think of this as read-only access with discussion rights.
+2. Can edit: Members have full collaboration power. They can modify instructions, update knowledge, manage other members, and actively contribute to the project.
+3. Owner: Project creators control everything, including who sees the project. They can share with specific people or make projects visible to the entire organization.
+
+###### Sharing your project
+To share a project:
+
+- Open the project you want to share
+- Click the "Share project" button to the right of the project name
+- Add individual members using their name or email, or copy and paste a list of email addresses for bulk sharing (in this case, the project will show up in their "Shared with you" section)
+- Or, share with "Everyone at [your organization]" to make your project discoverable within the Team tab
+
+Team members will receive email notifications when you share a project with them, and they can find shared projects in their "Shared with me" tab.
+
+###### Example projects to inspire you
+Not sure where to start? Here are some common project types across different functions:
+
+- **Q4 product launch:** Upload your product specs, competitive analysis, and messaging brainstorming notes. Claude will have this context top of mind for any inquiry or document draft.
+- **Research support:** Centralize your competitive review, user research data, and customer feedback. Claude can help you synthesize sources, draft reports, and maintain consistency across recommendations.
+- **Client account hub:** Keep your client's brand guidelines, past deliverables, and communication history in one place. Set instructions so Claude matches their tone and references their specific context when creating proposals or reports.
+- **Event planning workspace:** Upload venue contracts, speaker bios, and attendee data. Claude can help generate run-of-show documents, attendee communications, and post-event reports that stay consistent with your event's theme.
+- **Job description generator:** Gather past job descriptions, team charters, and internal headcount request docs. Work with Claude to draft job descriptions that reflect your team's actual work and culture.
+
+##### Best practices for projects
+To get the most out of projects:
+
+- Start focused, then expand. Begin with a specific use case rather than trying to create one project for everything. You can always add more content as you go.
+- Keep your knowledge base current. Outdated documents can lead to outdated responses. Review and update your project knowledge periodically.
+- Write clear instructions. Be specific about what you want. Vague instructions lead to inconsistent results.
+- Group related documents. This helps Claude draw connections between different sources and provide more comprehensive responses.
+- Reference documents by name. When asking questions, you can mention specific documents to help Claude focus its search: "Based on our Q3 report, what were the top customer concerns?"
+
+##### Key takeaways
+- Projects are self-contained workspaces with their own memory, chat histories, knowledge bases, and customized instructions. Think of them as dedicated environments for specific work streams.
+- Project knowledge enhances Claude's understanding by letting you upload relevant documents that Claude references across all chats within that project. No more re-uploading the same files each time.
+- Project instructions guide Claude's behavior—you can specify tone, expertise level, response style, and more. These instructions apply to every conversation within the project.
+- Projects scale automatically. When your knowledge base approaches context limits, Claude seamlessly enables Retrieval Augmented Generation (RAG) mode to expand capacity by up to 10x while maintaining response quality.
+- For Claude for Work users, projects enable collaboration. Share projects with teammates so everyone benefits from the same context, instructions, and accumulated knowledge.
+
+#### Creating with artifacts
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what artifacts are and when Claude creates them
+- Share artifacts with colleagues and publish them publicly
+- Troubleshoot common artifact issues
+
+##### What are artifacts?
+Artifacts are standalone, interactive outputs that Claude creates in a dedicated window alongside your conversation. Instead of getting a long block of code or text buried in the chat, you see your content rendered and ready to use—whether that's a working website, an interactive chart, or a document you can immediately download.
+
+Claude automatically creates an artifact when content meets certain criteria:
+
+- It's significant and self-contained, typically over 15 lines
+- It's something you're likely to want to edit, iterate on, or reuse
+- It represents complex content that stands on its own without needing the surrounding conversation
+- It's content you'll want to reference or use later
+
+##### Common artifact types
+Claude can create different types of artifacts, each suited to different needs:
+
+- **Documents (like markdown, plain text):** Great for anything text-heavy that you'll want to export or continue editing—like meeting notes, reports, project plans, blog posts, and other written content.
+- **Code snippets:** Working code in any programming language—Python, JavaScript, C++, and more. You can view the code, copy it, or download it to use in your own projects.
+- **HTML pages:** Complete web pages with HTML, CSS, and JavaScript in a single file. Perfect for landing pages, forms, interactive demos, or quick prototypes.
+- **SVG images:** Scalable vector graphics for logos, icons, illustrations, and other visual elements. These render directly in the artifact window so you can see exactly what you're getting.
+- **Mermaid diagrams:** Flowcharts, sequence diagrams, Gantt charts, org charts, and more. Describe the relationships you want to visualize, and Claude will create a diagram you can refine.
+- **React components:** Interactive UI elements with real functionality—calculators, dashboards, games, data visualizations. These aren't just mockups; they include actual logic and respond to user input.
+
+##### Creating your first artifact
+Creating an artifact is as simple as having a conversation. Just describe what you want, and Claude will determine whether to present it as an artifact.
+
+For example, you might say:
+
+- "Create a flowchart showing our customer onboarding process"
+- "Build an interactive dashboard that lets me input monthly expenses and see a breakdown"
+- "Design a landing page for a productivity app with a hero section and feature list"
+- "Write a project brief template I can reuse for new initiatives"
+
+If Claude doesn't automatically create an artifact when you expect one, you can explicitly ask: "Create this as an artifact" or "Show me this in an artifact."
+
+When Claude generates an artifact, it appears in a dedicated window to the right of your conversation. From here, you can:
+
+- **View different formats:** Toggle between a preview (how it looks) and the underlying code
+- **Copy content:** Click the copy icon to grab the content for use elsewhere
+- **Download files:** Save the artifact as a file to your computer
+- **View code:** See exactly what Claude generated under the hood
+
+##### Sharing and publishing artifacts
+Once you've created something useful, you have several options for sharing it.
+
+**Copy or download:** For personal use or sharing via other channels, use the copy or download buttons in the lower right corner of the artifact window.
+
+**Share within your organization (Claude for Work):** Team and Enterprise users can share artifacts internally with colleagues. The shared artifact stays within your organization and requires team authentication to access.
+
+**Publish publicly:** For free, Pro, and Max users, you can publish artifacts to make them accessible to anyone with the link. When you publish:
+
+- Only the selected version becomes public (your chat remains private)
+- Anyone can view and interact with the artifact without a Claude account
+- Others can "remix" your artifact—opening it in their own Claude conversation to modify and build upon it
+
+To publish, click the "Share" or "Publish" button in the upper right corner of the artifact. You can unpublish at any time by returning to that artifact and removing public access.
+
+##### Tips for getting the most from artifacts
+**Be specific about what you want.** "Build a budget tracker" is good, but "Build a monthly budget tracker where I can input expenses by category, see a pie chart breakdown, and get a warning when I'm over budget" is better.
+
+**Describe the end user.** Telling Claude who will use the artifact helps it make appropriate design choices. "This flowchart is for new employees" leads to different results than "This flowchart is for the engineering team."
+
+**Iterate incrementally.** Add one feature or make one change at a time. This makes it easier to identify what's working and catch issues early.
+
+**Request artifacts when needed.** If you ask for something substantial and Claude responds in the chat instead of creating an artifact, just say "Please create that as an artifact."
+
+#### Working with skills
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what Skills are and how Claude uses them
+- Identify Anthropic's built-in Skills for document creation
+- Enable and manage Skills in your settings
+
+##### What are Skills?
+Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Think of them as expertise packages—they teach Claude how to complete specific tasks in a repeatable way.
+
+You've already seen Skills at work if you've used Claude to create Excel spreadsheets, PowerPoint presentations, Word documents, or PDFs. Those file creation capabilities are powered by Skills running behind the scenes.
+
+###### Types of Skills
+There are two categories of Skills you'll encounter:
+
+- **Anthropic Skills** are created and maintained by Anthropic. These include enhanced document creation capabilities for Excel, Word, PowerPoint, and PDF files. Anthropic Skills are available to all paid users and Claude invokes them automatically when relevant—you don't need to do anything special to use them.
+- **Custom Skills** are ones you or your organization create for specialized workflows and domain-specific tasks. For example, you might create a skill that applies your company's brand guidelines to presentations, structures meeting notes in a specific format, or executes your organization's data analysis workflows.
+
+##### Enabling Skills
+Skills are currently available as a feature preview for users on Pro, Max, Team, and Enterprise plans. To use Skills, you'll need to have Code execution and file creation enabled, since Skills require Claude's secure sandboxed computing environment to function.
+
+###### Here's how to enable Skills:
+
+1. Navigate to Settings > Capabilities
+2. Ensure that Code execution and file creation is toggled on
+3. Scroll to the Skills section
+4. Toggle individual skills on or off as needed
+
+**For Enterprise plans,** organization Owners must first enable both Code execution and Skills in Admin settings before individual members can access them.
+
+**For Team plans,** this feature preview is enabled by default at the organization level.
+
+Once enabled, you'll see available Skills listed in your settings, including Anthropic's built-in Skills and any custom Skills you've uploaded.
+
+##### Using Skills in practice
+The beauty of Skills is that you typically don't need to think about them—Claude handles skill selection automatically based on your request. Here are some examples of prompts that would invoke Skills:
+
+- "Create an Excel spreadsheet tracking monthly expenses with formulas for totals"
+- "Turn this meeting notes document into a PowerPoint presentation"
+- "Generate a PDF report summarizing this data"
+- "Build a financial model in Excel with scenario analysis"
+
+When Claude uses a Skill, you'll see it mentioned in Claude's chain of thought as it works. The output will be a downloadable file you can save to your computer or directly to Google Drive.
+
+##### File execution
+
+This same capability means that Claude can work with your actual files (within a contained environment) to make updates on your behalf . Upload slides, spreadsheets, contracts, (or any .xlsx, .pptx, .docx, or .pdf files) and watch as Claude creates slides, performs analyses, and adds suggested edits. When Claude is done, you can download these files or open them in Drive.
+
+Note: To use these capabilities you’ll need to give Claude access to external data sources. Simply toggle Allow limited network access on when prompted:
+
+###### Security considerations
+Because Skills can include executable code, it's important to use them thoughtfully:
+
+- Only install custom Skills from trusted sources
+- Anthropic's built-in Skills are tested and maintained by Anthropic
+- Custom Skills you upload are private to your individual account
+
+If you're installing a custom Skill from an external source, review its contents before use to understand what it does.
+
+##### Creating custom skills
+While Anthropic's built-in Skills cover common document creation tasks, the real power of Skills comes from creating your own. Custom Skills let you teach Claude your specific workflows, brand guidelines, and ways of working—so Claude can apply that knowledge automatically whenever it's relevant.
+
+The easiest way to create a custom Skill is through conversation with Claude itself. You don't need to write code or manually create files—Claude handles the technical structure for you.
+
+Here's how to create a Skill through conversation:
+
+1. Start a new chat and tell Claude what you want to create. For example: "I want to create a skill for writing quarterly business reviews" or "I need a skill that applies our brand guidelines to presentations."
+2. Answer Claude's questions. Claude will interview you about your workflow, asking things like: What should this skill do? What makes good output for this type of work? Can you give examples of when you'd use this skill?
+3. Upload reference materials if you have them. Templates, style guides, brand assets, or examples of work you're proud of all help Claude understand exactly what you're looking for.
+4. Download your skill. When finished, Claude generates a downloadable ZIP file containing your properly structured skill.
+5. Upload to your settings. Go to Settings > Capabilities, scroll to the Skills section, click "Upload skill," and select your ZIP file.
+
+Your custom Skill will appear in your Skills list alongside Anthropic's built-in Skills. From that point forward, Claude will automatically invoke it whenever you work on relevant tasks—no manual triggering needed.
+
+##### Skills vs. Projects
+You might be wondering—if both skills and projects can be used to give more context to Claude, when should I use each? Think of it this way: **projects store knowledge, skills perform tasks.**
+
+Projects are knowledge hubs. They hold the reference materials Claude needs to understand your work—project specs, meeting notes, research documents. When you upload files to a project, Claude draws on that information across every conversation within that project.
+
+Skills are procedural machines. They encode how Claude should execute a task—the specific steps, order of operations, and methodology you want followed every time. Skills shine when you have repeatable workflows you want Claude to run consistently.
+
+The two features complement each other. A skill can reference knowledge stored in a project—your "customer call prep" skill might pull from customer profiles uploaded to a project's knowledge base. The project provides the what (information), the skill provides the how (process).
+
+|| Projects | Skills |
+| :--- | :--- | :--- |
+| **Purpose** | Store knowledge Claude references | Define processes Claude executes
+| **Best for** | Long-term context, reference materials, team collaboration | Repeatable workflows, multi-step tasks, consistent methodology
+| **Example** | Customer hub, research buddy, feedback generator | Brand guidelines, Blog drafting, PDF creation
+| **Persistence** | Knowledge available across all chats in the project | Instructions applied when the skill is invoked
+
+#### Expanding Claude's reach
+
+##### Connecting your tools
+
+###### Learning objectives
