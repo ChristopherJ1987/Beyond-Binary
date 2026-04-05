@@ -2,7 +2,7 @@
 
 `Created: April 4, 2026`
 
-`Last Updated: April 4, 2026`
+`Last Updated: April 5, 2026`
 
 ## Study Guide Overview
 
@@ -567,7 +567,7 @@ The two features complement each other. A skill can reference knowledge stored i
 | **Example** | Customer hub, research buddy, feedback generator | Brand guidelines, Blog drafting, PDF creation
 | **Persistence** | Knowledge available across all chats in the project | Instructions applied when the skill is invoked
 
-#### Expanding Claude's reach
+### [Expanding Claude's reach](#expanding-claudes-reach)
 
 ##### Connecting your tools
 
