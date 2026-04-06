@@ -2,7 +2,7 @@
 
 `Created: April 4, 2026`
 
-`Last Updated: April 5, 2026`
+`Last Updated: April 6, 2026`
 
 ## Study Guide Overview
 
@@ -572,3 +572,248 @@ The two features complement each other. A skill can reference knowledge stored i
 ##### Connecting your tools
 
 ###### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what connectors are and why they matter for your work with Claude
+- Navigate the connectors directory and set up your first connection
+- Use connected tools effectively in your conversations with Claude
+
+###### Finding and connecting tools
+Anthropic maintains a directory of recommended connectors at claude.ai/directory. The directory is organized into two tabs:
+
+- **Web:** Cloud services and applications (Gmail, Notion, Slack, Asana, Linear, Stripe, and many more)
+- **Desktop extensions:** Local tools that run on your computer through the Claude Desktop app
+
+To browse available connectors, you can also click the "Search and tools" button in the lower left of the chat window, then select "Add connectors."
+
+###### Setting up a web connector
+Here's how to connect a cloud service:
+
+1. **Find the connector:** Navigate to claude.ai/directory or click "Search and tools" > "Add connectors" in any chat
+2. **Click Connect:** Select the connector you want to add
+3. **Authenticate:** You'll be redirected to the service's login page. Sign in with your existing credentials
+4. **Grant permissions:** Review the specific permissions Claude is requesting, then authorize access
+5. **Test the connection:** Return to Claude and try a simple request, like "Can you access my [tool name]?"
+
+Once connected, Claude can search, read, and in some cases take actions within that service—depending on the permissions you've granted.
+
+###### Desktop extensions
+Desktop extensions require the Claude Desktop app rather than the web interface. These extensions let Claude interact with local applications, your file system, and native features on macOS or Windows.
+
+Some desktop extensions include:
+
+- Local file access for reading and organizing documents
+- Browser control for automated web tasks
+- Native application integration (like Figma for design work)
+
+To install a desktop extension:
+
+1. Download and install the Claude Desktop app
+2. Open the app and navigate to Settings > Extensions
+3. Browse available extensions and click Install
+4. Follow any additional setup steps specific to that extension
+
+###### Using connectors in your work
+Once you've connected your tools, Claude considers them when responding to your requests.
+
+Here are some practical ways to use connected tools:
+
+> Project management (Asana, Linear, Jira)
+
+- "What are my highest priority tasks due this week?"
+- "Create a new task for reviewing the Q4 budget proposal"
+- "Summarize the status of our product launch project"
+
+> Communication (Slack, Gmail)
+
+- "Find the email thread where we discussed the vendor contract"
+- "Draft a reply to the latest message in the #marketing channel"
+- "What did the team decide about the timeline in yesterday's discussion?"
+
+> Documentation (Notion, Google Drive, Confluence)
+
+- "Search our documentation for our brand voice guidelines"
+- "Summarize the meeting notes from last week's product review"
+- "What does our style guide say about using contractions?"
+
+> Business tools (Stripe, PayPal, Salesforce)
+
+- "Show me revenue trends for the past quarter"
+- "What's the status of the Acme Corp opportunity?"
+- "List recent transactions over $1,000"
+
+###### Security and permissions
+When you connect Claude to external services, you're granting it access to read—and sometimes modify—data within those services. Here are some important considerations:
+
+- **Scoped access:** Permissions are specific to what the connector needs and you can toggle individual permissions on and off within each application's menu.
+- **Claude sees what you see:** Claude can only access data you have access to. Connecting your work email doesn't give Claude access to your CEO's inbox—only your own.
+- **Revocable at any time:** You can disconnect a service through Claude's settings or through the third-party service's security settings.
+
+###### Key takeaways
+- **Connectors transform Claude from an assistant into an informed collaborator** by giving Claude access to the same tools, data, and context that you use every day. Instead of starting every conversation from scratch, Claude can work directly with your actual information.
+- **Connectors allow Claude to read information and perform actions on your behalf.** Depending on the connector and permissions you grant, Claude can search your files, retrieve documents, analyze data, create new content, update records, and execute tasks across your connected applications—all from within your conversation.
+- **The Model Context Protocol (MCP) powers connectors.** Think of MCP like USB-C for AI—a universal standard that allows Claude to connect to many different applications through a single, consistent interface. This open standard means developers can build connectors for any tool, and those connectors work seamlessly with Claude.
+- **There are two types of connectors: web connectors and desktop extensions.** Web connectors link Claude to cloud services like Google Drive, Notion, Slack, and Asana. Desktop extensions run locally on your computer through the Claude Desktop app, giving Claude access to local files and native applications.
+
+#### Enterprise search
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what Enterprise Search is and the types of questions - Enterprise Search can answer
+- Understand how the setup process works for both admins and users
+- Recognize how security and permissions protect organizational data
+
+##### What is Enterprise Search?
+Enterprise Search adds a dedicated "Ask {Your Org Name}" option to your sidebar. This is designed specifically for finding and synthesizing knowledge buried across your company's tools and data sources.
+
+Unlike regular chats with connectors enabled, Enterprise Search is specifically designed for information gathering, using custom instructions configured by the Anthropic team.
+
+##### What can you ask?
+Enterprise Search is particularly valuable for questions that span multiple sources or require synthesizing information from across your organization. Here are some common use cases:
+
+###### Getting up to speed
+
+- "What happened yesterday while I was out?"
+- "Summarize key updates across the business from the last week"
+- "What are the current blockers on the Platform project?"
+
+###### Policy and process questions
+
+- "What is our company's remote work policy?"
+- "How do I submit an expense report?"
+- "What's the process for requesting time off?"
+
+###### Research and analysis
+
+- "What are the main reasons customers cite for choosing competitors?"
+- "Summarize discussions about the Q4 product roadmap"
+- "Find information about our customer onboarding process"
+
+###### Onboarding new team members
+
+- "How does our authentication system work?"
+- "Who should I talk to about learning the billing system?"
+- "What tools does the engineering team use for deployment?"
+
+###### Performance and project tracking
+
+- "Find discussions and documents related to the marketing campaign"
+- "What were the key decisions from last week's leadership meetings?"
+- "Summarize team contributions to the Infrastructure initiative"
+
+When you ask a question, Claude searches across all your connected tools—such as SharePoint documents, Slack conversations, Gmail threads, and Google Drive files—and synthesizes information into a unified response. Plus, it always cites its sources so you can get the full context.
+
+##### Setting up Enterprise Search
+Enterprise Search requires a two-step setup process: first an admin configures it for the organization, then individual users authenticate with their personal accounts.
+
+> For admins (Owners)
+The Enterprise Search project is enabled by default for all Team and Enterprise organizations, but an Owner needs to complete the initial setup before team members can use it:
+
+1. Click "Ask Your Org" in the left sidebar.
+2. Click "Set up for your org" to continue (or "Disable" to turn the feature off).
+3. Connect your organization's tools. You'll be required to choose a connector for Documents (like Google Drive or SharePoint) and Chat (like Slack or Microsoft Teams). Email is recommended but optional.
+4. Click "+ Add more" to set up any additional tools your team needs.
+5. Customize the project name. Whatever you enter will appear as "Ask [Name]" in everyone's sidebar.
+6. Add a description, then click "Finish set up."
+
+Once setup is complete, the project becomes available to all members of your organization.
+
+> For users
+After an admin has set up Enterprise Search, you'll see the "Ask {Org Name}" project starred in your sidebar. Here's how to get started:
+
+1. Click on the project in your sidebar.
+2. Follow the guided onboarding flow to connect to the recommended services.
+3. Authenticate with each service you want to search (Slack, Google, Microsoft 365, etc.).
+4. Start asking Claude questions about your organization's knowledge.
+
+The more connectors you enable, the more comprehensive your search results will be. You can always add more connectors later by clicking "Connect" in the project's Instructions section.
+
+###### That's a lot of data … is this safe?
+In short, yes. Enterprise Search only shows what you already have permission to access in the original connected tool. Plus, your conversations remain private, and your connected data isn't indexed or stored separately.
+
+#### Research mode for deep dives
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Explain what Research does: systematic, multi-source investigation
+- Identify when to use Research for comprehensive information gathering
+- Understand how Research works with extended thinking to deliver thorough reports
+- Write effective Research prompts for complex investigations
+
+##### What is Research?
+Research is an advanced feature that transforms Claude from a conversational assistant into a systematic investigator. When you enable Research, Claude doesn't just answer your question—it explores it from multiple angles, synthesizing information from across the web and your connected integrations.
+
+Think of it as having a skilled research assistant who can spend hours gathering information, cross-referencing sources, and compiling a comprehensive report—except it happens in minutes instead of hours.
+
+Research is particularly valuable when you need more than a quick answer. It's designed for situations where a thorough understanding requires pulling together information from multiple sources, comparing different perspectives, and synthesizing findings into actionable insights.
+
+##### When to use Research
+Understanding when to use Research versus other Claude capabilities helps you get the best results for your specific needs.
+
+Use Research when you need:
+
+- Comprehensive reports that synthesize information from multiple sources
+- In-depth analysis across the web and your connected integrations (like Google Workspace)
+- Thorough investigations that would typically require hours of manual work
+- Comparative analysis, such as evaluating competitors or vendor options
+- Reports with citations you can verify
+
+Consider web search instead when:
+
+- You need a quick, specific fact (like today's stock price or a company's address)
+- The answer requires only one or two sources
+- Speed matters more than comprehensiveness
+
+Consider extended thinking instead when:
+
+- You need deep reasoning on a complex problem that doesn't require external information
+- You're working on mathematical problems, code debugging, or logical analysis
+- The answer comes from reasoning through a problem rather than gathering information
+
+##### How Research works
+When you enable Research, you're activating a multi-step process that goes far beyond a simple web search.
+
+1. Claude plans its approach. When Research is enabled, extended thinking automatically activates. This lets Claude break down your request, identify what information it needs, and plan how to investigate different angles of your question.
+2. Claude conducts multiple searches. Rather than running a single search, Claude conducts many searches that build on each other. It determines what to investigate next based on what it finds, pursuing promising leads and filling in gaps.
+3. Claude synthesizes findings. After gathering information from multiple sources—including the web and any connected integrations like Gmail, Google Calendar, or Google Drive—Claude compiles everything into a comprehensive, well-organized report.
+4. Claude provides citations. Every claim in Research reports links back to its source, making it easy to verify information and dig deeper when needed.
+
+##### Using Research in practice
+Here's how to enable and use Research:
+
+1. Find the Research button on the bottom left of your chat interface
+2. Click to enable—the button turns blue when Research is active
+3. Enter your prompt and submit
+4. Claude will work in the background, and you'll see progress indicators as it searches and analyzes
+
+**Important:** Web search must be enabled for Research to function. If you haven't already turned on web search, do so in your Search and tools settings.
+
+##### Tips for effective Research prompts
+Since Research can take 5 to 45 minutes depending on complexity, investing time in crafting your prompt pays off. Here are some strategies:
+
+- **Be specific about your goals.** Instead of "Tell me about the EV market," try "Analyze the electric vehicle battery market—identify key players, technology trends, and supply chain challenges that might affect investment decisions."
+- **Specify the sections or structure you want.** Claude will organize its findings around the structure you provide. For example: "Compare venue options for a team offsite including: location and accessibility, meeting space and amenities, catering options, and pricing considerations."
+- **Include relevant constraints.** Budget ranges, timelines, geographic requirements, and other parameters help Claude focus its research on relevant options.
+- **Ask Claude to help refine your prompt.** If you're not sure how to frame your research question, you can even ask Claude to help you write a better Research prompt before enabling the feature.
+
+##### Working with connected integrations
+When you have Google Workspace or other integrations connected, Research becomes even more powerful. Claude can pull context from your emails, calendar, and documents alongside web research.
+
+For example, you might ask Claude to:
+
+- "Summarize what's been discussed about Project X across my emails and Slack, then research industry best practices for similar initiatives"
+- "Review my calendar commitments for next week and research each company I'm meeting with"
+- "Find all internal documents about our pricing strategy and compare to how competitors are positioning themselves"
+
+When using Research with integrations, you can steer Claude by saying things like "Pull relevant context from my Google Drive" or "Include insights from my recent emails on this topic."
+
+##### Key takeaways
+- **Research transforms how Claude finds and analyzes information.** Instead of a single search, Claude operates agentically—conducting multiple searches that build on each other while determining exactly what to investigate next. It explores different angles of your question automatically and works through open questions systematically.
+- **Research delivers comprehensive answers in minutes.** Most reports complete in 5 to 15 minutes, though more complex investigations may take up to 45 minutes—work that would typically require hours of manual research.
+- **Extended thinking is automatically enabled with Research.** This powerful combination lets Claude both plan its approach thoughtfully and gather comprehensive information, breaking complex requests into manageable pieces.
+- **Citations make verification easy.** Research delivers thorough answers complete with easy-to-check citations, so you can trust Claude's findings and quickly verify sources yourself.
+
+### [Putting it all together](#putting-it-all-together)
+
