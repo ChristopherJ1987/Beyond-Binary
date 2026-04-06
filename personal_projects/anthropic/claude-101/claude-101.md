@@ -10,7 +10,7 @@
 2. [Organizing your work and knowledge](#organizing-your-work-and-knowledge)
 3. [Expanding Claude's reach](#expanding-claudes-reach)
 4. [Putting it all together](#putting-it-all-together)
-5. [Conclusion & Certificate](#conclusion-and-certificate)
+5. [Conclusion and Certificate](#conclusion-and-certificate)
 
 ---
 
@@ -817,3 +817,274 @@ When using Research with integrations, you can steer Claude by saying things lik
 
 ### [Putting it all together](#putting-it-all-together)
 
+#### Claude in action: use-cases by role
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Describe 2-3 use-cases for claude.ai that you can try right away
+- Know where to go to find additional use-case inspiration
+
+No matter what you do, Claude can help streamline your work. This lesson highlights practical use cases organized by role, so you can see how Claude applies to your specific work context.
+
+Each use case below links to a detailed guide in our Use Case Gallery with step-by-step instructions you can follow.
+
+##### General professional use
+These use cases apply across many roles and industries.
+
+- `Generate project status reports` – Keep stakeholders informed with clear, consistent updates
+- `Analyze patterns in user feedback` – Extract insights from customer comments and survey responses
+- `Package your brand guidelines in a skill` – Create a reusable Claude skill that applies your brand standards
+
+###### Sales
+Sales professionals can use Claude to accelerate deal preparation, create compelling materials, and stay on top of competitive intelligence.
+
+- `Build a battle card library` – Create competitive intelligence resources that help your team win deals
+- `Prepare for sales deals` – Research prospects and organize your talking points before important meetings
+- `Create sales reports` – Turn your pipeline data into clear, actionable reports
+
+###### Marketing
+Marketers can leverage Claude to analyze performance data and efficiently repurpose content across channels.
+
+- `Analyze campaign performance` – Extract insights from campaign metrics to inform your strategy
+- `Adapt content across platforms` – Efficiently repurpose content for different channels and audiences
+
+###### Finance
+Finance professionals can use Claude to build models, draft documents, and make sense of complex spreadsheets.
+
+- `Build financial models` – Create and refine financial projections with Claude's help
+- `Draft investment memos` – Structure and write investment analyses more efficiently
+- `Understand and extend an inherited spreadsheet` – Decode complex spreadsheets and add new functionality
+
+###### HR
+HR teams can use Claude to create better onboarding experiences and documentation.
+
+- `Create new hire onboarding guides` – Develop comprehensive onboarding materials tailored to different roles
+
+###### Legal
+Legal professionals can use Claude to track complex timelines and manage discovery processes.
+
+- `Track discovery timelines and analyze patterns` – Organize case timelines and identify key patterns in legal documents
+
+###### Research
+Researchers can use Claude to plan literature reviews and verify data analysis.
+
+- `Plan your literature review` – Organize your approach to reviewing academic sources
+- `Verify statistics from raw data` – Double-check calculations and statistical analyses
+
+###### Explore more
+These examples are just the beginning. Visit the Use Case Gallery to browse the full collection and find inspiration for how Claude can help with your specific work.
+
+#### Other ways to work with Claude
+
+##### Learning objectives
+By the end of this lesson, you will be able to:
+
+- Understand when to use additional Claude products including Claude Code, Claude for Slack, Claude for Excel, and Claude for 
+Chrome
+
+As we mentioned at the start of this course, Claude is an intelligence. Claude.ai is just one way of working with it.
+
+Claude is also available in several specialized tools designed to meet you where you already work. This lesson introduces four additional ways to work with Claude, each tailored to specific workflows and use cases.
+
+##### Claude Code
+Claude Code is an agentic coding tool that works where you work — in your terminal, IDE, browser, or even in Slack. It understands your codebase, executes commands, and handles entire development workflows through natural language.
+
+When to use Claude Code:
+
+- You want to build features by describing what you need in plain English, and have Claude write the code, run tests, and create commits
+- You need to debug issues by pasting error messages and having Claude analyze your codebase to identify and fix problems
+- You're navigating an unfamiliar codebase and want to ask questions about how different parts work together
+- You want to automate tedious tasks like fixing lint errors, resolving merge conflicts, or writing release notes
+- You prefer working in your terminal alongside your existing IDE and development tools rather than switching to a separate interface
+
+##### Claude in Slack
+
+Claude integrates directly with Slack, allowing you to get help in channels and threads or bring Slack context into your Claude conversations.
+
+When to use Claude in Slack:
+
+- You want to draft responses to messages, summarize lengthy threads, or break down complex discussions without leaving Slack
+- You need to prepare for meetings by having Claude pull together relevant conversations and shared documents from your workspace
+- You're onboarding to a new team and want help understanding ongoing projects by reviewing channel history
+- You want to hand off coding tasks directly from a bug report or feature discussion—just tag @Claude and it can spin up a Claude Code session using the surrounding context
+- You need to quickly get answers about industry trends, technical concepts, or company information during a conversation
+
+##### Claude for Excel
+
+Claude for Excel brings Claude directly into Microsoft Excel through a sidebar, allowing you to analyze, understand, and modify spreadsheets through conversation.
+
+When to use Claude for Excel:
+
+- You're working with a complex multi-tab workbook and want to understand how specific formulas or calculation flows work across sheets
+- You need to update assumptions or inputs across your model while preserving formula dependencies and relationships
+- You're debugging spreadsheet errors like #REF!, #VALUE!, or circular references and want Claude to trace them to their source and suggest fixes
+- You want to create new spreadsheets or populate existing templates with data while maintaining proper formula structure
+- You need to quickly build pivot tables or charts to visualize your data
+
+##### Claude for Chrome
+
+Claude for Chrome is a browser extension that adds Claude as a sidebar in Google Chrome. It can observe what you're working on and take actions directly within your browser.
+
+When to use Claude for Chrome:
+
+- You want to summarize articles, research papers, or web pages while browsing
+- You need help drafting email responses or managing your inbox
+- You're filling out repetitive forms and want to automate the process
+- You want to test website features or navigate multi-step workflows without manually clicking through each step
+- You need a browsing assistant that maintains context as you move between tabs and tasks
+
+**`Important note:`** Claude for Chrome is currently in research preview. Anthropic recommends using it for low-risk tasks on trusted websites. The extension asks for permission before taking high-risk actions like purchasing or sharing personal data, and certain categories of websites (financial services, adult content) are blocked by default.
+
+**`Availability:`** Claude for Chrome is available for Claude Max subscribers. Join the waitlist at claude.ai/chrome.
+
+> Summary - Each of these tools extends Claude's capabilities into the specific environments where you work:
+
+| Tool | Best for | Where it runs |
+| :--- | :--- | :--- |
+| Claude.ai | General tasks, research, writing, analysis, file creation | Web, desktop, and mobile apps |
+| Claude Code | Software development, codebase navigation, git workflows | Terminal/command line, IDE, or your browser |
+| Claude/Claude Code in Slack | Team collaboration, meeting prep, quick answers in context | Slack workspace |
+| Claude for Excel | Spreadsheet analysis, financial modeling, formula debugging | Microsoft Excel sidebar |
+| Claude for Chrome | Web research, email management, browser automation | Chrome browser sidebar |
+
+### [Conclusion and Certificate](#conclusion-and-certificate)
+
+#### What you've learned
+
+##### Getting started with Claude
+
+- Claude is an AI assistant built to be helpful, harmless, and honest—more than a chatbot, it's a thinking partner for complex work
+- You can access Claude through web, desktop, and mobile apps, with your conversations syncing across devices
+- Effective prompts set the stage (context), define the task (action), and specify rules (format and style)
+
+##### Getting better results
+
+- Iteration is key—treat first responses as starting points and refine through conversation
+- Common challenges like generic responses or wrong tone can be fixed with more specific context
+- AI Fluency encompasses four competencies: Delegation, Description, Discernment, and Diligence
+
+##### Organizing your work
+
+- Projects create dedicated workspaces with persistent knowledge, custom instructions, and team collaboration
+- Artifacts are standalone outputs like documents, code, diagrams, and interactive tools that Claude creates alongside your conversation
+- Skills are instruction packages that teach Claude specialized workflows—including built-in document creation and custom skills you can create
+
+##### Expanding Claude's reach
+
+- Connectors link Claude to your tools (Google Workspace, Slack, Notion, and many more) so it can work with your actual data
+- Enterprise Search provides a dedicated project for searching across your organization's knowledge sources
+- Research mode conducts systematic, multi-source investigations that would take hours to do manually
+
+##### Putting it all together
+
+- Claude applies across roles—sales, marketing, finance, HR, legal, research, and beyond
+- Beyond claude.ai, you can work with Claude through Claude Code, Slack, Excel, and Chrome
+
+##### Additional resources
+Learn more about AI and Claude
+
+- **`AI Fluency courses`** – Free courses on effective AI collaboration
+- **`Use Case Gallery`** – Step-by-step guides and prompts for powerful workflows
+- **`Anthropic Help Center`** – Detailed documentation and troubleshooting
+- **`Prompting documentation`** – Comprehensive guide to getting the best results
+
+##### Product-specific resources
+
+- **`Claude Code in Action`** – Course on using Claude for development workflows
+- **`Connector Directory`** – Browse and connect your tools
+
+##### A word of encouragement
+The most important thing you can do now is just get started! The skills you've learned here will sharpen with practice, and you'll develop intuition for when and how Claude can help.
+
+Start simple. Pick one recurring task from your work this week and try it with Claude. Maybe it's drafting an email, summarizing meeting notes, or analyzing a spreadsheet. See what happens. Iterate. Learn what works for your specific needs.
+
+Remember: Claude is designed to be a collaborator, not a replacement. The best results come when you bring your expertise, context, and judgment to the conversation.
+
+##### Quiz
+
+1. Which of the following best describes Claude's capabilities?
+
+    - [ ] Claude is a search engine that retrieves information from the web
+    - [ ] Claude is a voice assistant for smart home devices
+    - [ ] Claude is a chatbot designed primarily for customer service
+    - [X] Claude is an AI assistant that can help with writing, research, coding, problem-solving, and more
+
+2. What is the primary difference between projects and skills?
+
+    - [ ] Projects are free, skills require a paid plan
+    - [ ] Projects are for teams, skills are for individuals
+    - [X] Projects store knowledge, skills perform tasks
+    - [ ] Projects work offline, skills require internet
+
+3. What data can Claude access through connectors?
+
+    - [X] Only data you have permission to access
+    - [ ] All data in the connected service
+    - [ ] Only data created in the last 30 days
+    - [ ] Only docs that have been individually shared with Anthropic
+
+4. Who needs to complete the initial setup before team members can use Enterprise Search?
+
+    - [ ] Anthropic support team
+    - [ ] Each individual user
+    - [ ] The IT security team
+    - [X] An organization Owner (admin)
+
+5. What happens when your project knowledge base approaches context limits?
+
+    - [ ] Claude stops accepting new file uploads
+    - [X] Claude seamlessly enables RAG mode to expand capacity by up to 10x
+    - [ ] You must create a new project to continue
+    - [ ] Older files are automatically deleted to make room
+
+6. What can you do with a published artifact?
+
+    - [ ] Only view it—no interaction is possible
+    - [X] Share it with anyone via link, and others can "remix" it in their own Claude conversations
+    - [ ] It automatically gets posted to social media
+    - [ ] It becomes permanently locked and cannot be modified
+
+7. Which three elements make up an effective prompt?
+
+    - [ ] Introduction, body, and conclusion
+    - [X] Setting the stage, defining the task, and specifying rules
+    - [ ] Question, answer, and follow-up
+    - [ ] Subject, verb, and object
+
+8. If Claude's response is too generic, what should you try?
+
+    - [X] Add more details about your audience, role, or constraints
+    - [ ] Ask Claude to search the web for better answers
+    - [ ] Switch to a different AI model
+    - [ ] Start a new conversation and ask the same question
+
+9. Which Claude product is best suited for navigating an unfamiliar codebase and automating development tasks?
+
+    - [X] Claude Code
+    - [ ] Claude for Chrome
+    - [ ] Claude in Slack
+    - [ ] Claude for Excel
+
+10. Which of the following tasks is a good candidate for Research mode?
+
+    - [ ] Reformatting a PDF file
+    - [X] Conducting comprehensive market analysis
+    - [ ] Brainstorming product codenames
+    - [ ] Redlining legal documents
+
+11. How confident do you feel in your ability to use Claude after completing this course? 
+
+    - [ ] Not at all confident
+    - [ ] Slightly confident
+    - [ ] Moderately confident
+    - [ ] Very confident
+    - [ ] Extremely confident
+
+12. How likely are you to recommend this course to a friend or colleague?
+
+    - [ ] Not at all likely
+    - [ ] Not very likely
+    - [ ] Not sure
+    - [ ] Likely
+    - [ ] Extremely likely
