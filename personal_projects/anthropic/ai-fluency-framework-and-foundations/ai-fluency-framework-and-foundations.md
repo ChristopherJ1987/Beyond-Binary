@@ -15,7 +15,7 @@
 7. [Discernment](#discernment)
 8. [The Description-Discernment Loop](#description-discernment-loop)
 9. [Diligence](#diligence)
-10. [Conclusion & Certificate](#conclusion-and-certificate)
+10. [Conclusion and Certificate](#conclusion-and-certificate)
 
 ---
 
@@ -94,9 +94,9 @@ There are things Generative AI can and cannot do effectively at this point in ti
 - Current limitations include knowledge cutoff dates, potential for hallucinations, context window constraints, and challenges with complex reasoning
 - The most effective applications combine human and AI strengths, with humans providing critical thinking, judgment, creativity, and ethical oversight
 
-#### Delegation
+### [Delegation](#delegation)
 
-##### A closer look at Delegation
+#### A closer look at Delegation
 The first core competency of AI Fluency: Delegation. Delegation focuses on deciding what work to do yourself, what to collaborate on with AI, and how to distribute tasks effectively. Three key components of Delegation:
 
 - **`Problem Awareness:`** Understanding your goals and the work involved to achieve it
@@ -105,15 +105,7 @@ The first core competency of AI Fluency: Delegation. Delegation focuses on decid
 
 Delegation requires both expertise in your field and understanding of AI capabilities — and why it's essential for working effectively and efficiently with AI systems.
 
-##### Key takeaways
-- Delegation is about making thoughtful decisions about what work to do yourself, what to do together with AI, or what to let AI handle independently, and how to distribute those tasks.
-- Problem Awareness means clearly understanding your goals and the nature of the work before involving AI.
-- Platform Awareness involves understanding the capabilities and limitations of different AI systems.
-- Task Delegation is the process of thoughtfully distributing work between humans and AI to leverage the strengths of each.
-- Effective delegation requires both domain expertise and an understanding of AI capabilities.
-- The goal isn't to automate everything, but to create the most effective human-AI partnership for any given task or goal.
-
-##### Project planning and delegation
+#### Project planning and delegation
 
 > Step 1: Choose your project
 
@@ -170,9 +162,17 @@ Similar to what you did in the previous lesson, work with Claude to explore your
 3. Create a project plan that includes your major tasks and delegation decisions.
 4. Save your project plan—you'll return to this project later in the course to practice your Description, Discernment, and Diligence skills.
 
-#### Description
+##### Key takeaways
+- Delegation is about making thoughtful decisions about what work to do yourself, what to do together with AI, or what to let AI handle independently, and how to distribute those tasks.
+- Problem Awareness means clearly understanding your goals and the nature of the work before involving AI.
+- Platform Awareness involves understanding the capabilities and limitations of different AI systems.
+- Task Delegation is the process of thoughtfully distributing work between humans and AI to leverage the strengths of each.
+- Effective delegation requires both domain expertise and an understanding of AI capabilities.
+- The goal isn't to automate everything, but to create the most effective human-AI partnership for any given task or goal.
 
-##### A closer look at description
+### [Description](#description)
+
+#### A closer look at description
 
 Description competency of AI Fluency — the art of communicating effectively with AI systems. Description goes beyond simply writing prompts; it involves creating a collaborative environment where both you and the AI can work effectively together. Three key components of Description:
 
@@ -190,3 +190,201 @@ AI can't read your mind, and the quality of your results often comes down to how
 - AI systems are interactive partners, not databases or vending machines
 - Clear communication up front saves time and leads to better results
 
+### [Effective Prompting Techniques](#effective-prompting-techniques)
+
+#### Lesson Objectives
+- Understand what prompt engineering is and why it matters for productive AI collaboration
+- Apply six foundational prompting techniques to improve your AI interactions
+- Identify common patterns that lead to successful AI interactions
+- Troubleshoot and refine prompts when AI responses don't meet your needs
+
+Prompt engineering is simply the practice of designing effective instructions for AI systems, combining familiar human communication principles with AI-specific considerations. We introduce six foundational techniques: giving context, showing examples of desired outputs, specifying constraints, breaking complex tasks into steps, asking the AI to think first, and defining the AI's role or tone. We also share troubleshooting strategies for when responses aren't quite right and highlight common patterns that lead to successful interactions.
+
+##### Key takeaways
+- Effective prompting combines clear communication principles with AI-specific techniques
+- Six foundational prompting techniques:
+  - Give context: Be specific about what you want, why you want it, and relevant background
+  - Show examples: Demonstrate the output style or format you're looking for
+  - Specify constraints: Clearly define format, length, and other output requirements
+  - Break complex tasks into steps: Guide the AI through multi-step reasoning
+  - Ask the AI to think first: Give space for the AI to work through its process
+  - Define the AI's role or tone: Specify how you want the AI to communicate
+- The "secret weapon": Ask the AI itself to help improve your prompt
+- Successful prompting is iterative (and perhaps also collaborative with the AI!). Expect to refine your approach based on results
+- Common successful patterns include providing clear task overviews, format specifications, explicit constraints, and relevant background information
+
+### [Discernment](#discernment)
+
+#### Lesson Objectives
+- Understand how to evaluate AI outputs and processes thoughtfully
+- Develop critical thinking skills for your AI interactions
+- Learn to identify and address quality concerns in your AI interactions
+
+AI Fluency competency focusses on thoughtfully evaluating AI outputs, processes, and behaviors. We explain that Discernment is the flip side of Description. While Description helps you communicate your intentions clearly, Discernment helps you evaluate whether what you receive meets your needs. The three types of Discernment:
+
+- **`Product Discernment:`** Evaluating the quality of AI outputs
+- **`Process Discernment:`** Assessing how the AI approached the task
+- **`Performance Discernment:`** Evaluating how the AI behaved during the interaction itself
+
+Together, these skills help ensure that your AI collaboration remains guided by thoughtful human judgment.
+
+##### Key takeaways
+- Discernment is your ability to thoughtfully evaluate what AI produces, how it produces it, and how it behaves
+- Product Discernment focuses on evaluating the quality of actual outputs (accuracy, appropriateness, coherence, relevance)
+- Process Discernment involves assessing how the AI arrived at its output, looking for logical errors, attention gaps, or inappropriate reasoning
+- Performance Discernment evaluates how the AI behaves within the collaboration process itself, considering whether its communication style is effective for your needs
+- Discernment works hand-in-hand with Description in a continuous feedback loop
+- Even the most advanced AI systems benefit from human judgment and oversight
+
+### [The Description-Discernment Loop](#the-description-discernment-loop)
+
+#### Lesson Objectives
+- Apply Description and Discernment skills to a real project
+- Engage in productive Description-Discernment feedback loops
+- Create results through human-AI collaboration that exceed what either could achieve alone
+
+#### Core Loop
+> Describe ➡ Receive ➡ Discern ➡ Refine ➡ Repeat
+
+##### Description *(give better instructions)*
+*Define 3 things:*
+
+- Product *(what you want)*
+    - Output type, format, length, style, depth
+
+- Process *(how it should think)*
+    - Approach, framework, constraints, perspective
+
+- Performance *(how it behaves)*
+    - Concise vs detailed
+    - Challenging vs supportive
+    - Exploratory vs decisive
+
+##### Discernment *(evaluate output)*
+*Check 3 things:*
+
+- Product
+    - Does it meet requirements?
+    - Is it actually usable?
+
+- Process
+    - Did it follow the right approach?
+    - Is the reasoning solid?
+
+- Performance
+    - Is the tone/style helpful?
+    - Too verbose or too shallow?
+
+### [Diligence](#diligence)
+
+#### Lesson Objectives:
+- Understand the ethical implications of AI collaboration
+- Understand the importance of transparency in AI work
+- Recognize your responsibility in AI interactions and outputs
+
+Diligence is the AI Fluency competency that focuses on responsible and ethical AI collaborations. Other competencies primarily address effectiveness and efficiency, Diligence addresses ethical and safety aspects that are equally crucial. We introduce three components:
+
+- **`Creation Diligence:`** Being thoughtful about which AI systems you choose and how you work with them
+- **`Transparency Diligence:`** Being open about AI's role in your work
+- **`Deployment Diligence:`** Taking ownership for AI-assisted outputs you share with others
+
+Different contexts may have different expectations, but we each have a responsibility to understand and meet these expectations.
+
+#### Key takeaways
+- Diligence is about taking responsibility for our AI collaborations
+- Creation Diligence involves being thoughtful about which AI systems we use and how we engage with them
+- Transparency Diligence means being honest about AI's role in our work with everyone who needs to know
+- Deployment Diligence requires taking responsibility for verifying and vouching for the outputs we use or share
+- Different contexts (personal, academic, professional) may have different expectations for disclosure and verification
+- Thoughtful Diligence helps ensure our AI collaborations are not only effective and efficient, but also ethical and safe
+
+### [Conclusion and Certificate](#conclusion-and-certificate)
+
+#### Conclusion
+
+##### Lesson Objectives
+- Consolidate key learnings from the course
+- Connect AI Fluency to your continuing development
+
+AI Fluency Framework brings together the key concepts explored throughout the course. Recap the four core competencies (the 4Ds): Delegation (deciding what work to do with AI versus independently), Description (communicating effectively with AI), Discernment (evaluating AI outputs and behaviors), and Diligence (ensuring responsible AI collaboration). We emphasize that these competencies apply across all three major ways of interacting with AI (Automation, Augmentation, and Agency) and that fluency develops through practice, not overnight mastery. We close with a reminder that AI systems are powerful but not magical solutions; they're only as useful and safe as we enable them to be through our thoughtful engagement.
+
+##### Key takeaways
+- AI Fluency develops through intentional practice of the four core competencies
+- Delegation emphasizes that our expertise and judgment remain the foundation of effective AI collaboration
+- Description involves clear communication that bridges our intentions and AI capabilities
+- Discernment requires thoughtful and critical evaluation of outputs to work within the systems constraints
+- Diligence ensures accountability, transparency, and responsibility in our AI work
+- The most powerful outcomes emerge when humans and AI build on each other's strengths
+- The framework is designed to remain relevant as AI systems continue to evolve
+
+### Quiz
+
+1. According to the AI Fluency Framework, what does AI Fluency mean?
+
+    - [ ] Memorizing the best prompts for different AI tools
+    - [X] The ability to work with AI effectively, efficiently, ethically, and safely
+    - [ ] Using AI to automate all possible tasks
+    - [ ] Becoming a technical expert in AI development
+
+2. The four core competencies in the AI Fluency Framework are known as "The 4 Ds." Which of the following lists all four correctly?
+
+    - [ ] Design, Description, Development, Deployment
+    - [ ] Data, Delegation, Discernment, Documentation
+    - [ ] Direction, Description, Decision-making, Diligence
+    - [X] Delegation, Description, Discernment, Diligence
+
+3. Which competency focuses primarily on deciding what work should be done by AI versus what should be handled by humans?
+
+    - [ ] Discernment
+    - [ ] Diligence
+    - [X] Delegation
+    - [ ] Description
+
+4. According to the framework, what is the primary focus of the Diligence competency?
+
+    - [ ] Evaluating the quality of AI outputs
+    - [ ] Making AI work faster and more efficiently
+    - [X] Responsible AI use, transparency, and accountability
+    - [ ] Writing better prompts for AI systems
+
+5. Which of the following best describes "Problem Awareness" within the Delegation competency?
+
+    - [ ] Knowing how to write effective prompts
+    - [ ] Understanding which AI platform to use
+    - [X] Clearly defining your goals and understanding what work is needed before involving AI
+    - [ ] Evaluating the quality of AI outputs
+
+6. Which competency focuses on communicating clearly with AI systems about what you want, how you want it done, and how you want to interact?
+
+    - [X] Description
+    - [ ] Delegation
+    - [ ] Discernment
+    - [ ] Diligence
+
+7. Which of the following best describes "Product Description" within the Description competency?
+
+    - [X] Clearly defining what you want the AI to create or provide
+    - [ ] Taking responsibility for AI-generated content accuracy
+    - [ ] Evaluating whether AI outputs meet your requirements
+    - [ ] Explaining which AI platform to use for a task
+
+8. Which competency involves critically evaluating AI outputs, processes, and behaviors to ensure quality and appropriateness?
+
+    - [ ] Description
+    - [ ] Diligence
+    - [X] Discernment
+    - [ ] Delegation
+
+9. Which of the following best describes "Process Discernment" within the Discernment competency?
+
+    - [X] Assessing whether the AI's reasoning process and problem solving approach is effective
+    - [ ] Deciding which AI system to use for a task
+    - [ ] Judging the final quality of AI-generated content
+    - [ ] Ensuring transparency about AI involvement in your work
+
+10. Which of the following best describes "Transparency Diligence" within the Diligence competency?
+
+    - [ ] Choosing the most advanced AI system available
+    - [X] Being open and honest about AI's role in your work with those who need to know
+    - [ ] Ensuring AI outputs are technically accurate
+    - [ ] Making AI work as fast as possible
