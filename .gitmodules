@@ -1,3 +1,6 @@
 [submodule "personal_projects/business/music-player"]
 	path = personal_projects/business/music-player
 	url = git@github.com:ChristopherJ1987/music-player.git
+[submodule "client_projects/novel-eshelf"]
+	path = client_projects/novel-eshelf
+	url = git@github.com:ChristopherJ1987/beyond-binary-novel-eshelf.git
