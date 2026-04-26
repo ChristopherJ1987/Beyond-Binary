@@ -34,6 +34,18 @@
 
 #### AI as a Learning Partner
 
-
+##### Key takeaways
+- We should seek to use AI in ways that strengthen our knowledge and critical thinking skills, not weaken them.
+- Effective learning with AI means staying in the driver's seat while AI challenges and supports you
+- AI should act as a coach or tutor, not a substitute player
+- You must be able to explain and apply everything you submit, even if AI helped
+- The harder path of genuine learning with AI leads to real capability and confidence
 
 #### AI in Career Planning
+
+##### Key takeaways
+- Career planning combines AI's information gathering with your self-knowledge and values
+- Generic AI-generated resumes and cover letters are easily spotted and ineffective
+- AI excels at research, brainstorming, and practice but you must drive the strategy
+- Skill building with AI requires specific goals and active practice, not passive consumption
+- AI Fluency is itself a valuable career skill to develop and showcase
