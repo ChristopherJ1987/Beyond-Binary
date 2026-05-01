@@ -2,7 +2,7 @@
 
 `Created: April 28.2026`
 
-`Last Updated: April 30, 2026`
+`Last Updated: May 1, 2026`
 
 ## Study Guide Overview
 
@@ -369,3 +369,33 @@ Then connect to the inspector in your browser. You'll see two sections:
 Click on any resource to test it. For templated resources, you'll need to provide values for the parameters. The inspector shows you the exact response structure your client will receive, including the MIME type and serialized data.
 
 Resources provide a clean way to expose read-only data from your MCP server, making it easy for clients to fetch information without the complexity of tool calls.
+
+#### Accessing Resources
+
+Resources in MCP allow your server to expose information that can be directly included in prompts, rather than requiring tool calls to access data. This creates a more efficient way to provide context to AI models.
+
+##### Understanding the Response Structure
+When you request a resource, the server returns a result with a contents list. We access the first element since we typically only need one resource at a time. The response includes:
+
+- The actual content (text or data)
+- A MIME type that tells us how to parse the content
+Other metadata about the resource
+
+##### Content Type Handling
+The function checks the MIME type to determine how to process the content:
+
+- If it's application/json, parse the text as JSON and return the parsed object
+- Otherwise, return the raw text content
+
+This approach handles both structured data (like JSON) and plain text documents seamlessly.
+
+##### Testing Resource Access
+Once implemented, you can test the resource functionality through your CLI application. When you type "@" followed by a resource name, the system will:
+
+1. Show available resources in an autocomplete list
+2. Let you select a resource using arrow keys and space
+3. Include the resource content directly in your prompt
+4. Send everything to the AI model without requiring additional tool calls
+
+This creates a much smoother user experience compared to having the AI model make separate tool calls to access document contents. The resource content becomes part of the initial context, allowing for immediate responses about the data.
+
