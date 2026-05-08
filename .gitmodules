@@ -4,3 +4,6 @@
 [submodule "client_projects/novel-eshelf"]
 	path = client_projects/novel-eshelf
 	url = git@github.com:ChristopherJ1987/beyond-binary-novel-eshelf.git
+[submodule "personal_projects/business/beyond-binary-client"]
+	path = personal_projects/business/beyond-binary-client
+	url = git@github.com:ChristopherJ1987/beyond-binary-client.git
