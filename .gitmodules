@@ -7,3 +7,6 @@
 [submodule "personal_projects/business/beyond-binary-client"]
 	path = personal_projects/business/beyond-binary-client
 	url = git@github.com:ChristopherJ1987/beyond-binary-client.git
+[submodule "community_work/beasty-base/beasty-base-backend"]
+	path = community_work/beasty-base/beasty-base-backend
+	url = git@github.com:ChristopherJ1987/beasty-base-backend.git
