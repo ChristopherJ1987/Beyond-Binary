@@ -1,4 +1,4 @@
-![Community Work banner](../assets/community-work-banner.png)
+![Community Work Banner](../assets/community-work-banner.png)
 
 ## 📖 About This Directory
 
@@ -8,7 +8,7 @@ Community work is central to the Beyond Binary vision: building a sustainable bu
 
 ## 📁 Directory Structure
 
-As this directory groes, projects will be organized to make navigation easier. For now, each pro-bono project lives here as its own submodule, representing partnerships with non-profits, animal rescues, grassroots organizations, and community initiatives working toward a better world.
+As this directory grows, projects will be organized to make navigation easier. For now, each pro-bono project lives here as its own submodule, representing partnerships with non-profits, animal rescues, grassroots organizations, and community initiatives working toward a better world.
 
 ---
 
